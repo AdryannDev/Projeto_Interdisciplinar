@@ -28,16 +28,23 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vw;
     height: 24vh;
     background-color: var(--cor-primaria);
 }
 footer .footer-reclamacoes{
     background-color: var(--cor-primaria);
-    width: 25%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.links-footer{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
 }
 
