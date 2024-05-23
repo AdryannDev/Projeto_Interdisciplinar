@@ -5,7 +5,6 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 100vw;
     height: auto;
     background-color: var(--cor-primaria);
 }
@@ -16,7 +15,7 @@
     align-items: end;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 735px;
+    width: 550px;
     height: var(--header-altura);
     font-size: var(--header-texto);
     font-weight: bold;
