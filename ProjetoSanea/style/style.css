@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* Cores de fundo */
+    --cor-primaria: #295A80;
+    --cor-secundaria: #7BAED2;
+    --cor-terciaria: #D9D9D9;
+    --cor-quaternaria: #006992;
+    --cor-fundo: white;
+
+    /* Fontes */
+    --familia-primaria: poppins, sans-serif;
+    --familia-secundaria: georgia, sans-serif;
+
+    /* Tamanho do texto */
+    --fonte-primaria: 20px;
+    --fonte-secundaria: 18px;
+    --fonte-terciaria: 30px;
+    --texto-bold: bold;
+    --texto-semibold: 600;
+
+    /* Header  */
+    --header-altura: 170px;
+    --header-texto: 28px;
+    --navbar-espacamento-letras: "1.5px";
+
+    /* Footer */
+    --footer-altura: 242px;
+    --footer-links: 20px;
+    --footer-titulos: 32px;
+    --footer-icones: 32px; /* width e height dos ícones*/
+
+    /* Login e Cadastro */
+    --login-titulo: 30px;
+    --login-label: 18px;
+    --login-botao: 20px;
+    --login-texto: 14px; /* Textos menores (p ou span) */
+
+    /* Menu */
+    --menu-icones: 92px; /* width e height dos ícones */
+
+    /* Informações */
+    --info-titulo: 30px;
+    --info-icones: 101px; /* width e height dos ícones */
+
+    /* Doenças e Notícias */
+    --doencas-texto: 32px;
+    --doencas-titulo: 30px;
+
+    /* Detalhes Doença e Noticias*/
+    --doencas-view-titulo: 30px;
+
+    /* SobreNos */
+    --sobrenos-titulo: 32px;
+
+    /* Comentários da Reclamação */
+    --comentario-titulo: 40px;
+    --comentario-reclamacao: 20px;
+}
+
+*{
+    font-family: var(--familia-primaria);
+    padding: 0px;
+    margin: 0px;
+}
