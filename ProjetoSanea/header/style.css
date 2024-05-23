@@ -1,0 +1,59 @@
+@import url(../style/style.css);
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    background-color: var(--cor-primaria);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 735px;
+    height: var(--header-altura);
+    font-size: var(--header-texto);
+    font-weight: bold;
+}
+
+.header img{
+    width: 372px;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 4px solid white;
+    font-weight: 600;
+    letter-spacing: var(--navbar-espacamento-letras);
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login button{
+    background-color: var(--cor-primaria);
+    border: none;
+    color: white;
+    font-size: var(--header-texto);
+    font-weight: 600;
+}
+
+#icon_login{
+    width: 113px;
+    height: 113px;
+}
