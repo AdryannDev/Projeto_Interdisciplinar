@@ -22,8 +22,8 @@
     --texto-semibold: 600;
 
     /* Header  */
-    --header-altura: 170px;
-    --header-texto: 28px;
+    --header-altura: 100px;
+    --header-texto: 18px;
     --navbar-espacamento-letras: "1.5px";
 
     /* Footer */
@@ -33,8 +33,8 @@
     --footer-icones: 32px; /* width e height dos ícones*/
 
     /* Login e Cadastro */
-    --login-titulo: 30px;
-    --login-label: 18px;
+    --login-titulo: 30px; 
+    --login-label: 16px;
     --login-botao: 20px;
     --login-texto: 14px; /* Textos menores (p ou span) */
 
