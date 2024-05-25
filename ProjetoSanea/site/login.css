@@ -53,20 +53,23 @@ main{
 }
 
 .login-inputs input{
-    background-color: #696969;
+    background-color: #575757;
     border-radius: 10px;
     width: 268px;
     height: 45px;
     border: 0px;
     color: white;
     font-size: 16px;
-    padding-left: 10px;
+    padding: 2px 0px 2px 15px;
     transition: 0.5s all;
 }
 
 .login-inputs input:hover{
-    opacity: 0.7;
-    
+    opacity: 0.9;
+}
+
+.login-inputs input:focus{
+    background-color: #696969;
 }
 
 .login-input label{
@@ -109,6 +112,7 @@ main{
 
 #login-botao:hover{
     opacity: 0.4;
+    cursor: pointer;
 }
 
 .check-manter-logado{
