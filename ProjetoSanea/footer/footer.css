@@ -1,25 +1,48 @@
 @import url(../style/style.css);
 
 footer{
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
-    height: 24vh;
+    height: auto;
     background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
 }
-footer .footer-reclamacoes{
+footer .footer-reclamacoes, footer .footer-informacoes, footer .footer-faleConosco{
+    padding: 12px 0;
     background-color: var(--cor-primaria);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 25%
 }
-
+footer .footer-reclamacoes{
+    margin-left: 20px;
+}
+.titulo-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .links-footer{
     display: flex;
     justify-content: start;
     align-items: start;
     flex-direction: column;
+}
+.links-footer a{
+    color: white;
+    text-decoration: none;
+}
+footer .footer-informacoes{
+    padding: 0 20px;
+    border-left: 5px solid #999898;
+    border-right: 5px solid #999898;
+}
+footer .footer-faleConosco{
+    margin-right: 20px;
 }
 
