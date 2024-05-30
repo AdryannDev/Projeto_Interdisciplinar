@@ -2,7 +2,7 @@
 @import url(../../header/header.css);
 @import url(../../footer/footer.css);
 
-.barra-pesquisa-doenca{
+/* .barra-pesquisa-doenca{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +18,14 @@
 .barra-pesquisa-doenca input{
     padding: 8px;
     border-radius: 10px;
-    border: 4px solid rgb(0, 0, 0);
+    border: 4px solid #aaaaaa;
     width: 300px;
+    transition: 0.4s all ease;
+    font-size: 16px;
+}
+
+.barra-pesquisa-doenca input:hover{
+    background-color: #ebebeb;
 }
 
 .input-pesquisa-doenca{
@@ -31,7 +37,7 @@
 }
 
 .input-pesquisa-doenca button{  
-    border: 4px solid black;
+    border: none;
     border-radius: 20px;
     padding: 6px;
 }
@@ -44,7 +50,7 @@
 .input-pesquisa-doenca img:hover{  
     opacity: 0.7;
     cursor: pointer;
-}
+} */
 
 .banner-doencas{
     display: flex;
@@ -54,17 +60,64 @@
     margin: 32px 122px 72px 122px;
     font-size: var(--doencas-texto);
     border-radius: 20px;
+    padding: 0px 80px;
 }
 
 .img-banner-doencas img{
     width: 350px;
     height: 350px;
-    margin-left: 23px
 }
 
 .texto-banner-doencas{
     width: 593px;
-    margin-right: 102px;
+}
+
+.pesquisa-doencas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.barra-pesquisa-doencas{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #F0F0F0;
+    padding: 30px;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.barra-pesquisa-doencas input{
+    padding: 8px;
+    border-radius: 10px;
+    border: 4px solid #aaaaaa;
+    width: 300px;
+    transition: 0.4s all ease;
+    font-size: 18px;
+}
+
+.barra-pesquisa-doencas-form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100px;
+}
+
+.barra-pesquisa-doencas-cancelar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 51px;
+    transition: 0.5s all;
+}
+
+.barra-pesquisa-doencas-cancelar:hover{
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .cards-doencas{
@@ -93,7 +146,7 @@
 }
 
 .card-doenca img{
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 20px;
 }
