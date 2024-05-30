@@ -1,7 +1,6 @@
 @import url(../style/style.css);
 
 footer{
-    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
