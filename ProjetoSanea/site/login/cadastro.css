@@ -1,6 +1,6 @@
-@import url(../style/style.css);
-@import url(../header/header.css);
-@import url(../footer/footer.css);
+@import url(../../style/style.css);
+@import url(../../header/header.css);
+@import url(../../footer/footer.css);
 
 main{
     width: 100%;
@@ -11,9 +11,9 @@ main{
     background-color: #E9E9E9;
 }
 
-.formulario-login{
-    width: 468px;
-    height: 560px; /* No figma é 514px*/
+.formulario-cadastro{
+    width: 935px;
+    height: 600px; /* No figma é 514px*/
     background-color: var(--cor-form-login);
     margin: 49px 0px;
     display: flex;
@@ -23,36 +23,43 @@ main{
     border-radius: 10px;
 }
 
-.formulario-login h1{
+.formulario-cadastro h1{
     font-size: var(--login-titulo);
     margin-top: 32px;
 }
 
-.login-titulo{
+.cadastro-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+}
+
+.cadastro-titulo{
     font-weight: var(--texto-semibold);
 }
 
-.login-inputs{
+.cadastro-inputs{
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    gap: 16px;
+    gap: 16\px;
 }
 
-.login-input{
+.cadastro-input{
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
 }
 
-.login-inputs label{
+.cadastro-inputs label{
     font-size: var(--login-label);
 }
 
-.login-inputs input{
+.cadastro-inputs input{
     background-color: #575757;
     border-radius: 10px;
     width: 268px;
@@ -64,15 +71,15 @@ main{
     transition: 0.5s all;
 }
 
-.login-inputs input:hover{
+.cadastro-inputs input:hover{
     opacity: 0.9;
 }
 
-.login-inputs input:focus{
+.cadastro-inputs input:focus{
     background-color: #696969;
 }
 
-.login-input label{
+.cadastro-input label{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,10 +103,10 @@ main{
     background: url(../img/login/checked.svg) no-repeat;
 }
 
-#login-botao{
+#cadastro-botao{
     width: 266px;
     height: 46px;
-    margin-top: 32px;
+    margin-top: 4px;
     font-size: var(--login-botao);
     background-color: var(--cor-quaternaria);
     color: #fff;
@@ -110,7 +117,7 @@ main{
     transition: 0.6s all ease;
 }
 
-#login-botao:hover{
+#cadastro-botao:hover{
     opacity: 0.4;
     cursor: pointer;
 }
@@ -137,7 +144,7 @@ main{
     margin-bottom: 15px;
 }
 
-.login-texto{
+.cadastro-texto{
     font-size: var(--login-texto);
 }
 
