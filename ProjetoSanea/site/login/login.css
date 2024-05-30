@@ -1,6 +1,6 @@
-@import url(../style/style.css);
-@import url(../header/header.css);
-@import url(../footer/footer.css);
+@import url(../../style/style.css);
+@import url(../../header/header.css);
+@import url(../../footer/footer.css);
 
 main{
     width: 100%;
@@ -11,9 +11,9 @@ main{
     background-color: #E9E9E9;
 }
 
-.formulario-cadastro{
-    width: 935px;
-    height: 600px; /* No figma é 514px*/
+.formulario-login{
+    width: 468px;
+    height: 560px; /* No figma é 514px*/
     background-color: var(--cor-form-login);
     margin: 49px 0px;
     display: flex;
@@ -23,43 +23,36 @@ main{
     border-radius: 10px;
 }
 
-.formulario-cadastro h1{
+.formulario-login h1{
     font-size: var(--login-titulo);
     margin-top: 32px;
 }
 
-.cadastro-form{
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    width: 100%;
-}
-
-.cadastro-titulo{
+.login-titulo{
     font-weight: var(--texto-semibold);
 }
 
-.cadastro-inputs{
+.login-inputs{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     margin-top: 30px;
-    gap: 16\px;
+    gap: 16px;
 }
 
-.cadastro-input{
+.login-input{
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
 }
 
-.cadastro-inputs label{
+.login-inputs label{
     font-size: var(--login-label);
 }
 
-.cadastro-inputs input{
+.login-inputs input{
     background-color: #575757;
     border-radius: 10px;
     width: 268px;
@@ -71,15 +64,15 @@ main{
     transition: 0.5s all;
 }
 
-.cadastro-inputs input:hover{
+.login-inputs input:hover{
     opacity: 0.9;
 }
 
-.cadastro-inputs input:focus{
+.login-inputs input:focus{
     background-color: #696969;
 }
 
-.cadastro-input label{
+.login-input label{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,19 +87,19 @@ main{
 
 .check-manter-logado input[type="checkbox"] {
     appearance: none;
-    background: url(../img/login/checkbox.svg) no-repeat;
+    background: url(../../img/login/checkbox.svg) no-repeat;
     width: 30px;
     height: 30px;
 }
 
 .check-manter-logado input[type="checkbox"]:checked {
-    background: url(../img/login/checked.svg) no-repeat;
+    background: url(../../img/login/checked.svg) no-repeat;
 }
 
-#cadastro-botao{
+#login-botao{
     width: 266px;
     height: 46px;
-    margin-top: 4px;
+    margin-top: 32px;
     font-size: var(--login-botao);
     background-color: var(--cor-quaternaria);
     color: #fff;
@@ -117,7 +110,7 @@ main{
     transition: 0.6s all ease;
 }
 
-#cadastro-botao:hover{
+#login-botao:hover{
     opacity: 0.4;
     cursor: pointer;
 }
@@ -144,7 +137,7 @@ main{
     margin-bottom: 15px;
 }
 
-.cadastro-texto{
+.login-texto{
     font-size: var(--login-texto);
 }
 
