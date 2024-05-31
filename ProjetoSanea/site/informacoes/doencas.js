@@ -2,14 +2,17 @@ let btn_fil_doenca = document.getElementById("filtro-doencas");
 let fil_doenca = document.getElementById("input-filtro-doenca");
 let cancelar_fil_doenca = document.getElementById("cancelar-pesquisa-doenca");
 let cards_doencas = document.querySelectorAll(".card-doenca");
+let nenhuma_doenca = document.querySelector(".card-nenhuma-doenca");
 
 if(!fil_doenca.value){
     cancelar_fil_doenca.style.display = "none";
 }
 
 fil_doenca.addEventListener('input', function(){
+    let cont_resultados = cards_doencas.length;
     if(!fil_doenca.value){
         cancelar_fil_doenca.style.display = "none";
+        nenhuma_doenca.style.display = "none";
     }
     else{
         cancelar_fil_doenca.style.display = "flex";
@@ -22,7 +25,14 @@ fil_doenca.addEventListener('input', function(){
         }
         else{
             cards_doencas[i].style.display = "flex";
+            cont_resultados--;
         }
+    }
+    
+    if(cont_resultados == cards_doencas.length){
+        nenhuma_doenca.style.display = "flex";
+    } else{
+        nenhuma_doenca.style.display = "none";
     }
 });
 
@@ -32,6 +42,7 @@ cancelar_fil_doenca.addEventListener('click', function(){
         card.style.display = "flex";
     });
     cancelar_fil_doenca.style.display = "none";
+    nenhuma_doenca.style.display = "none";
 });
 
 cards_doencas.forEach(card => {
