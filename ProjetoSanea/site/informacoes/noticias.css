@@ -79,7 +79,7 @@
     gap: 40px;
 }
 
-.card-noticia{
+.card-noticia, .card-nenhuma-noticia{
     display: flex;
     justify-content: start;
     background-color: var(--cor-secundaria);
@@ -91,14 +91,16 @@
     cursor: pointer;
 }
 
-.card-noticia:hover{
+.card-nenhuma-noticia{
+    display: none;
+}
+
+.card-noticia:hover, .card-nenhuma-noticia:hover{
     background-color: #accee7;
 }
 
-.card-noticia img{
+.card-noticia img, .card-nenhuma-noticia img{
     width: 80px;
     height: 80px;
     border-radius: 20px;
-}@import url(../../style/style.css);
-@import url(../../header/header.css);
-@import url(../../footer/footer.css);
+}

@@ -2,14 +2,17 @@ let btn_fil_noticia = document.getElementById("filtro-noticias");
 let fil_noticia = document.getElementById("input-filtro-noticia");
 let cancelar_fil_noticia = document.getElementById("cancelar-pesquisa-noticia");
 let cards_noticias = document.querySelectorAll(".card-noticia");
+let nenhuma_noticia = document.querySelector(".card-nenhuma-noticia");
 
 if(!fil_noticia.value){
     cancelar_fil_noticia.style.display = "none";
 }
 
 fil_noticia.addEventListener('input', function(){
+    let cont_resultados = cards_noticias.length;
     if(!fil_noticia.value){
         cancelar_fil_noticia.style.display = "none";
+        nenhuma_noticia.style.display = "none";
     }
     else{
         cancelar_fil_noticia.style.display = "flex";
@@ -22,8 +25,16 @@ fil_noticia.addEventListener('input', function(){
         }
         else{
             cards_noticias[i].style.display = "flex";
+            cont_resultados--;
         }
     }
+
+    if(cont_resultados == cards_noticias.length){
+        nenhuma_noticia.style.display ="flex";
+    } else{
+        nenhuma_noticia.style.display ="none";
+    }
+
 });
 
 cancelar_fil_noticia.addEventListener('click', function(){
@@ -32,6 +43,7 @@ cancelar_fil_noticia.addEventListener('click', function(){
         card.style.display = "flex";
     });
     cancelar_fil_noticia.style.display = "none";
+    nenhuma_noticia.style.display = "none";
 });
 
 cards_noticias.forEach(card => {
