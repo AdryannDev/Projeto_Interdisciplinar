@@ -98,4 +98,5 @@ section .txt p, span{
 }
 .desenvolvedores .imgDevs .dev img:hover{
     transform: scale(1.12);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
 }
