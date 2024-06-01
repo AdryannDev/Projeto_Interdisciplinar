@@ -56,20 +56,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #F0F0F0;
     margin: 32px 122px 72px 122px;
     font-size: var(--doencas-texto);
     border-radius: 20px;
-    padding: 0px 80px;
+    padding: 30px 10px;
+    gap: 20px;
+}
+
+
+.texto-banner-doencas span{
+    text-wrap: wrap;
+    text-align: justify;
 }
 
 .img-banner-doencas img{
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 
 .texto-banner-doencas{
-    width: 593px;
+    width: 580px;
 }
 
 .pesquisa-doencas{
@@ -80,17 +88,56 @@
     gap: 20px;
 }
 
-.barra-pesquisa-doencas{
+.filtro-pesquisa-doencas{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: #F0F0F0;
-    padding: 30px;
-    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    background-color: var(--cor-terciaria);
+    padding: 20px;
+    border-radius: 10px;
     gap: 10px;
 }
 
-.barra-pesquisa-doencas input{
+.opcoes-filtro-doencas{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-filtro-doencas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+}
+
+.info-filtro-doencas img{
+    width: 45px;
+}
+
+.nome-pesquisa-doencas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-pesquisa-doencas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-pesquisa-doencas input{
     padding: 8px;
     border-radius: 10px;
     border: 4px solid #aaaaaa;
@@ -99,29 +146,43 @@
     font-size: 18px;
 }
 
-.barra-pesquisa-doencas-form{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 100px;
+.cancelar-pesquisa-doencas{
+    display: none;
 }
 
-.barra-pesquisa-doencas-cancelar{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 51px;
-    transition: 0.5s all;
+.cancelar-pesquisa-doencas img{
+    transition: 0.4s all;
+    margin-top: 30px;
 }
 
-.barra-pesquisa-doencas-cancelar:hover{
+.cancelar-pesquisa-doencas img:hover{
     cursor: pointer;
     opacity: 0.6;
 }
 
+.resultado-pesquisa-doencas{
+    margin-top: 20px;
+    display: none;
+}
+
+.tags-pesquisa-doencas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#select-doencas{
+    padding: 8px;
+    border-radius: 10px;
+    border: 4px solid #aaaaaa;
+    width: 300px;
+    transition: 0.4s all ease;
+    font-size: 18px;
+}
+
 .cards-doencas{
-    margin: 20px;
+    margin: 40px 20px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,9 +190,14 @@
     gap: 40px;
 }
 
-.card-doenca, .card-nenhuma-doenca{
+.card-doenca{
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: 0.2s all ease;
+}
+
+.card-doenca, .card-nenhuma-doenca{
     background-color: var(--cor-secundaria);
     padding: 20px;
     gap: 40px;
@@ -139,6 +205,37 @@
     width: 70%;
     transition: 0.3s all ease;
     cursor: pointer;
+}
+
+.corpo-card-doenca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-card-doenca{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.link-card-doenca{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s all ease;  
+}
+
+.card-doenca:hover .link-card-doenca{
+    height: 20px;
+    visibility: visible;
+    opacity: 1;
 }
 
 .card-nenhuma-doenca{
@@ -154,3 +251,4 @@
     height: 80px;
     border-radius: 20px;
 }
+
