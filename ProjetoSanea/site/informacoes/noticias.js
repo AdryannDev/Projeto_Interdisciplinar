@@ -6,10 +6,8 @@ let resultados_noticia = document.querySelector(".resultado-pesquisa-noticias");
 let span_resultados = resultados_noticia.querySelector("span");
 let select_fil_noticia = document.getElementById("select-noticias"); 
 
-ScrollReveal({ distance: '80px' }); 
-ScrollReveal().reveal('.banner-noticias',{origin: "left", duration: 2000});
-ScrollReveal().reveal('.img-banner-noticias',{origin: "top", duration: 2000});
-
+ScrollReveal().reveal('.banner-noticias',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.2, distance: "100px"});
+ScrollReveal().reveal('.img-banner-noticias',{origin: "bottom", duration: 2000, easing: 'ease', opacity: 0.2, distance: "40px"});
 
 
 //Função ao utilizar o input para escrever
@@ -25,8 +23,14 @@ select_fil_noticia.addEventListener('input', function(){
 });
 
 function filtrar_noticia(pesquisa){
+    //Se o filtro estiver vazio, esconde os elementos de pesquisa
+    if(!pesquisa.value){
+        display_pesquisa("hide");
+    }
+    else{ //Senão, mostra o elemento de resetar filtro
+        cancelar_fil_noticia.style.display = "flex";
+    }
     
-    let hasTag = false;
     //Se for uma pesquisa utilizando o SELECT
     if(pesquisa == select_fil_noticia){
         select_filtro_noticia(pesquisa);
@@ -38,6 +42,7 @@ function filtrar_noticia(pesquisa){
 }
 
 function select_filtro_noticia(pesquisa){
+    let hasTag = false;
     let num_resultados = 0;
 
     if(pesquisa.value.trim().toLowerCase() == "todos"){
@@ -85,27 +90,20 @@ function input_filtro_noticia(pesquisa){
     cont_resultados = cards_noticias.length;
     num_resultados = 0;
 
-    //Se o filtro estiver vazio, esconde os elementos de pesquisa
-    if(!pesquisa.value){
-        display_pesquisa("hide");
-    }
-    else{ //Senão, mostra o elemento de resetar filtro
-        cancelar_fil_noticia.style.display = "flex";
-    }
-    for(let i = 0; i < cards_noticias.length; i++) { //Faz para cada CARD
-        let card_id = cards_noticias[i].id;
+    cards_noticias.forEach(card => {
+        let card_id = card.id;
         if(card_id.includes(`card-${pesquisa.value.toLowerCase()}`)){ //Verif se o valor inserido é igual ao id do CARD
-            cards_noticias[i].style.display = "flex";
+            card.style.display = "flex";
             cont_resultados--;
         }
         else{
-            cards_noticias[i].style.display = "none";
+            card.style.display = "none";
             resultados_noticia.style.display = "flex";
         }
         num_resultados = cards_noticias.length - cont_resultados;
 
         if(num_resultados == 1){
-            span_resultados.innerHTML = `${num_resultados} resultados para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>`;
+            span_resultados.innerHTML = `${num_resultados} resultado para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>`;
             nenhuma_noticia.style.display = "none";
         } else if(num_resultados > 1){
             span_resultados.innerHTML = `${num_resultados} resultados para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>`;
@@ -114,7 +112,31 @@ function input_filtro_noticia(pesquisa){
             span_resultados.innerHTML = `Nenhum resultado encontrado para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>` ;
             nenhuma_noticia.style.display = "flex";
         }
-    }
+    });
+
+    // for(let i = 0; i < cards_noticias.length; i++) { //Faz para cada CARD
+    //     let card_id = cards_noticias[i].id;
+    //     if(card_id.includes(`card-${pesquisa.value.toLowerCase()}`)){ //Verif se o valor inserido é igual ao id do CARD
+    //         cards_noticias[i].style.display = "flex";
+    //         cont_resultados--;
+    //     }
+    //     else{
+    //         cards_noticias[i].style.display = "none";
+    //         resultados_noticia.style.display = "flex";
+    //     }
+    //     num_resultados = cards_noticias.length - cont_resultados;
+
+    //     if(num_resultados == 1){
+    //         span_resultados.innerHTML = `${num_resultados} resultados para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>`;
+    //         nenhuma_noticia.style.display = "none";
+    //     } else if(num_resultados > 1){
+    //         span_resultados.innerHTML = `${num_resultados} resultados para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>`;
+    //         nenhuma_noticia.style.display = "none";
+    //     } else{//Se não encontrar um resultado
+    //         span_resultados.innerHTML = `Nenhum resultado encontrado para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>` ;
+    //         nenhuma_noticia.style.display = "flex";
+    //     }
+    // }
 }
 
 //Função para resetar filtro
