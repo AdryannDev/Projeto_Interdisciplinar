@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     background-color: #F0F0F0;
     margin: 32px 122px 72px 122px;
-    font-size: var(--noticias-texto);
+    font-size: var(--doencas-texto);
     border-radius: 20px;
     padding: 30px 10px;
     gap: 20px;
@@ -112,9 +112,17 @@
 }
 
 .resultado-pesquisa-noticias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     display: none;
     font-size: 18px;
+    width: 400px;
+}
+
+.resultado-pesquisa-noticias span{
+    text-align: center;
 }
 
 .palavra-filtro-noticias{

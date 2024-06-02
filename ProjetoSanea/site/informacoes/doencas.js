@@ -6,9 +6,8 @@ let resultados_doenca = document.querySelector(".resultado-pesquisa-doencas");
 let span_resultados = resultados_doenca.querySelector("span");
 let select_fil_doenca = document.getElementById("select-doencas"); 
 
-ScrollReveal({ distance: '80px' }); 
-ScrollReveal().reveal('.banner-doencas',{origin: "left", duration: 2000});
-ScrollReveal().reveal('.img-banner-doencas',{origin: "bottom", duration: 2000});
+ScrollReveal().reveal('.banner-doencas',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.2, distance: "80px"});
+ScrollReveal().reveal('.img-banner-doencas',{origin: "bottom", duration: 2000, easing: 'ease', opacity: 0.2, distance: "40px"});
 
 if(!fil_doenca.value){
     cancelar_fil_doenca.style.display = "none";

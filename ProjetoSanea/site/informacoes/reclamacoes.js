@@ -4,6 +4,9 @@ let cancelar_fil_reclamacao = document.getElementById("cancelar-pesquisa-reclama
 let cards_reclamacoes = document.querySelectorAll(".card-reclamacao");
 let nenhuma_reclamacao = document.querySelector(".card-nenhuma-reclamacao");
 
+ScrollReveal().reveal('.banner-reclamacoes',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.2, distance: "100px"});
+ScrollReveal().reveal('.img-banner-reclamacoes',{origin: "bottom", duration: 2000, easing: 'ease', opacity: 0.2, distance: "40px"});
+
 if(!fil_reclamacao.value){
     cancelar_fil_reclamacao.style.display = "none";
 }
