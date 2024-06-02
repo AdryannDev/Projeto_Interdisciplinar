@@ -8,7 +8,7 @@ let select_fil_doenca = document.getElementById("select-doencas");
 
 ScrollReveal({ distance: '80px' }); 
 ScrollReveal().reveal('.banner-doencas',{origin: "left", duration: 2000});
-ScrollReveal().reveal('.img-banner-doencas',{origin: "top", duration: 2000});
+ScrollReveal().reveal('.img-banner-doencas',{origin: "bottom", duration: 2000});
 
 if(!fil_doenca.value){
     cancelar_fil_doenca.style.display = "none";
@@ -56,11 +56,11 @@ function filtrar_doenca(pesquisa){
             }
             let num_resultados = cards_doencas.length - cont_resultados;
             if(num_resultados == 1){
-                span_resultados.innerHTML = `${num_resultados} resultado`;
+                span_resultados.innerHTML = `${num_resultados} resultado para <span class="palavra-filtro-doencas"> "${pesquisa.value}"</span>`;
             } else if(num_resultados > 1){
-                span_resultados.innerHTML = `${num_resultados} resultados`;
+                span_resultados.innerHTML = `${num_resultados} resultados para <span class="palavra-filtro-doencas"> "${pesquisa.value}"</span>`;
             } else{
-                span_resultados.innerHTML = `Nenhum resultado` ;
+                span_resultados.innerHTML = `Nenhum resultado para <span class="palavra-filtro-doencas"> "${pesquisa.value}"</span>` ;
             }
         }
         
