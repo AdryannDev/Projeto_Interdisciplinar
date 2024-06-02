@@ -2,56 +2,6 @@
 @import url(../../header/header.css);
 @import url(../../footer/footer.css);
 
-/* .barra-pesquisa-doenca{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #D9D9D9;
-    padding: 20px;
-}
-
-.barra-pesquisa-doenca a{
-    text-decoration: none;
-    color: black;
-}
-
-.barra-pesquisa-doenca input{
-    padding: 8px;
-    border-radius: 10px;
-    border: 4px solid #aaaaaa;
-    width: 300px;
-    transition: 0.4s all ease;
-    font-size: 16px;
-}
-
-.barra-pesquisa-doenca input:hover{
-    background-color: #ebebeb;
-}
-
-.input-pesquisa-doenca{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.input-pesquisa-doenca button{  
-    border: none;
-    border-radius: 20px;
-    padding: 6px;
-}
-
-.input-pesquisa-doenca img{  
-    width: 40px;
-    height: 30px;
-}
-
-.input-pesquisa-doenca img:hover{  
-    opacity: 0.7;
-    cursor: pointer;
-} */
-
 .banner-doencas{
     display: flex;
     justify-content: center;
@@ -65,15 +15,14 @@
     gap: 20px;
 }
 
-
 .texto-banner-doencas span{
     text-wrap: wrap;
     text-align: justify;
 }
 
 .img-banner-doencas img{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .texto-banner-doencas{
@@ -85,6 +34,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -103,6 +53,7 @@
 
 .opcoes-filtro-doencas{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
@@ -232,6 +183,10 @@
     transition: 0.4s all ease;  
 }
 
+.card-doenca:hover{
+    box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.308);
+}
+
 .card-doenca:hover .link-card-doenca{
     height: 20px;
     visibility: visible;
@@ -243,7 +198,7 @@
 }
 
 .card-doenca:hover, .card-nenhuma-doenca:hover{
-    background-color: #accee7;
+   background-color: #8ebfe2;
 }
 
 .card-doenca img, .card-nenhuma-doenca img{
@@ -252,3 +207,7 @@
     border-radius: 20px;
 }
 
+.palavra-filtro-doencas{
+    color: var(--cor-primaria);
+    font-weight: bold;
+}

@@ -40,12 +40,12 @@
             </div>
         </div>
         <div class="pesquisa-noticias">
-            <h2>Veja as principais doenças: </h2>
+            <h2>Veja as principais Notícias: </h2>
             <div class="filtro-pesquisa-noticias">
                 <div class="opcoes-filtro-noticias">
                     <div class="nome-pesquisa-noticias">
                         <div class="input-pesquisa-noticias">
-                            <label for="input-filtro-noticias">Pesquise uma doença</label>
+                            <label for="input-filtro-noticias">Pesquise uma notícia</label>
                             <input type="text" name="input-filtro-noticias" id="input-filtro-noticias" placeholder="Nome da doença">
                         </div>
                     </div>
@@ -53,13 +53,13 @@
                         <label for="select-noticias">Selecione uma categoria de notícias</label>
                         <select name="select-noticias" id="select-noticias">
                             <option value="todos">Todas</option>
+                            <option value="anuncio">Anuncio</option>
                             <option value="esgoto">Esgoto</option>
                             <option value="falta">Falta de Água</option>
-                            <option value="anuncio">Anuncio</option>
-                            <option value="vazamento">Vazamento</option>
                             <option value="historia">História</option>
-                            <option value="esgoto">Esgoto</option>
-                            <!-- Demais noticias -->
+                            <option value="poluicao">Poluição</option>
+                            <option value="vazamento">Vazamento</option>
+                            <!-- Demais tags -->
                         </select>
                     </div>
                 </div>
@@ -101,8 +101,8 @@
             </div>
             <div class="card-noticia" id="card-rj">
                 <div class="tags-noticias">
-                    <span class="anuncio-noticia">#Historia</span>
-                    <span class="poluicao">#Poluição</span>
+                    <span class="historia-noticia">#Historia</span>
+                    <span class="poluicao-noticia">#Poluicao</span>
                 </div>
                 <div class="desc-card-noticia">
                     <img src="../../img/paginas/noticias/forca-tarefa.webp" alt="">
@@ -136,6 +136,21 @@
                     <span>Clique para ver mais sobre</span>
                 </div>
             </div>
+            <div class="card-noticia" id="card-vazamento">
+                <div class="tags-noticias">
+                    <span class="historia-noticia">#Historia</span>
+                    <span class="poluicao-noticia">#Poluicao</span>
+                    <span class="vazamento-noticia">#Vazamento</span>
+                </div>
+                <div class="desc-card-noticia">
+                    <img src="../../img/paginas/noticias/retomada.webp" alt="">
+                    <h3>Vazamento que contaminou água da Cedae é achado próximo a oleoduto; imagem aérea mostra mancha em rio</h3>
+                </div>   
+                <div class="link-card-noticia">
+                    <span>Clique para ver mais sobre</span>
+                </div>
+            </div>
+            <!-- Demais Notícias -->
             <div class="card-nenhuma-noticia">
                 <img src="../../img/paginas/noticias/nao-encontrado.png" alt="">
                 <h3>Nenhuma notícia encontrada com esse filtro!</h3>
