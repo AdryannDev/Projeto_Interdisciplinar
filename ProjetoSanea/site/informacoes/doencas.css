@@ -211,3 +211,57 @@
     color: var(--cor-primaria);
     font-weight: bold;
 }
+
+@media (max-width:900px){
+    .banner-doencas{
+        margin: 0px;
+        font-size: 12px;
+    }
+
+    .img-banner-doencas img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .texto-banner-doencas{
+        width: 280px;
+    }
+}
+
+@media (max-width: 515px){
+    .input-pesquisa-doencas input{
+        width: 200px;
+    }
+
+    #select-doencas{
+        width: 200px;
+    }
+
+    .cards-doencas{
+        margin: 40px 10px 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .card-doenca{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+        
+    .card-doenca, .card-nenhuma-doenca{
+        width: 70%;
+    }
+
+    .desc-card-doenca{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

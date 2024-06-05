@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reclamacoes.css">
     <link rel="shortcut icon" href="../../ico/icon_saneaSP.ico" type="image/x-icon">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header class="header">
@@ -14,7 +15,7 @@
             <a href="../index.html"><img src="../../img/logos/logo_saneaSP.svg" alt="Logo do site" id="logo_header"></a>
         </div>
         <div class="navbar-header">
-            <a href="../informacoes/">Doenças</a>
+            <a href="../informacoes/doencas.html">Doenças</a>
             <a href="reclamacoes.html">Reclamações</a>
             <a href="../informacoes/noticias.html">Notícias</a>
         </div>
@@ -25,58 +26,119 @@
     </header>
     <main>
         <div style="height: 10px;"></div>
-        <!-- <section class="barra-pesquisa-reclamacoe">
-            <a href="#cards-reclamacoes"><h3>Veja sobre as principais doenças</h3></a>
-            <div class="input-pesquisa-reclamacoe">
-                <input type="text" name="input-filtro-reclamacoe" id="input-filtro-reclamacoe" placeholder="Pesquisar doenças">
-                <button id="filtro-reclamacoes"><img src="../../img/paginas/reclamacoes/pesquisar.svg" alt=""></button>
-            </div>
-        </section> -->
         <div class="banner-reclamacoes">
             <div class="img-banner-reclamacoes">
-                <img src="../../img/paginas/reclamacoes/reclamacoes.svg" alt="">
+                <img src="../../img/paginas/reclamacoes/reclamacao.svg" alt="">
             </div>
             <div class="texto-banner-reclamacoes">
-                <span>O saneamento básico é crucial para a saúde pública, prevenindo doenças e promovendo o bem-estar. O acesso a água potável, esgoto tratado e manejo correto de resíduos sólidos reduz a contaminação ambiental e a exposição a agentes patogênicos. Investir em saneamento melhora a qualidade de vida e sustenta o desenvolvimento sustentável, beneficiando toda a sociedade. Proteja sua saúde e o meio ambiente com saneamento básico adequado!</span>
+                <span>
+                    O saneamento básico é crucial para a saúde pública, prevenindo doenças e promovendo o bem-estar. 
+                    Investir em saneamento melhora a qualidade de vida e sustenta o desenvolvimento sustentável, beneficiando toda a 
+                    sociedade. Proteja sua saúde e o meio ambiente com saneamento básico adequado!
+                </span>
             </div>
         </div>
         <div class="pesquisa-reclamacoes">
-            <h2>Veja as reclamações dos usuários: </h2>
-            <div class="barra-pesquisa-reclamacoes">
-                <div class="barra-pesquisa-reclamacoes-form">
-                    <label for="input-filtro-reclamacoes">Pesquise o título da reclamação</label>
-                    <input type="text" name="input-filtro-reclamacao" id="input-filtro-reclamacao" placeholder="Titulo da reclamação">
+            <h2>Veja as principais Reclamações: </h2>
+            <div class="filtro-pesquisa-reclamacoes">
+                <div class="opcoes-filtro-reclamacoes">
+                    <div class="nome-pesquisa-reclamacoes">
+                        <div class="input-pesquisa-reclamacoes">
+                            <label for="input-filtro-reclamacoes">Pesquise uma reclamação</label>
+                            <input type="text" name="input-filtro-reclamacoes" id="input-filtro-reclamacoes" placeholder="Nome da reclamação">
+                        </div>
+                    </div>
+                    <div class="tags-pesquisa-reclamacoes">
+                        <label for="select-reclamacoes">Selecione uma categoria de reclamações</label>
+                        <select name="select-reclamacoes" id="select-reclamacoes">
+                            <option value="todos">Todas</option>
+                            <option value="esgoto">Esgoto</option>
+                            <option value="falta">Falta de Água</option>
+                            <option value="poluicao">Poluição</option>
+                            <option value="vazamento">Vazamento</option>
+                            <!-- Demais tags -->
+                        </select>
+                    </div>
                 </div>
-                <div class="barra-pesquisa-reclamacao-cancelar" id="cancelar-pesquisa-reclamacao">
-                    <img src="../../img/paginas/reclamacoes/cancelar.svg" alt="">
+                <div class="info-filtro-reclamacoes">
+                    <div class="cancelar-pesquisa-reclamacoes" id="cancelar-pesquisa-reclamacoes">
+                        <img src="../../img/paginas/reclamacoes/cancelar.svg" alt="">
+                    </div>
+                    <div class="resultado-pesquisa-reclamacoes">
+                        <span>Nenhum resultado</span>
+                    </div>
                 </div>
-                <!-- <svg id="filtro-reclamacoes" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="black" d="M456.69 421.39L362.6 327.3a173.8 173.8 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.8 173.8 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3M97.92 222.72a124.8 124.8 0 1 1 124.8 124.8a124.95 124.95 0 0 1-124.8-124.8"/></svg> -->
             </div>
         </div>
+
         <div class="cards-reclamacoes" id="cards-reclamacoes">
-            <div class="card-reclamacao" id="card-vazamento">
-                <img src="../../img/paginas/reclamacoes/user1.jpg" alt="">
-                <h3>Vazamento de Água próxima a minha casa</h3>
+            <div class="card-reclamacao" id="card-mano">
+                <div class="tags-reclamacoes">
+                    <span class="falta-reclamacao">#Falta de água</span>
+                </div>
+                <div class="desc-card-reclamacao">
+                    <img src="../../img/paginas/reclamacoes/user1.jpg" alt="">
+                    <h3>Mano, que sacanagem, roubaram minha água</h3>
+                </div>
+                <div class="link-card-reclamacao">
+                    <span>Clique para ver mais sobre</span>
+                </div>
             </div>
-            <div class="card-reclamacao" id="card-cade">
-                <img src="../../img/paginas/reclamacoes/user2.jpg" alt="">
-                <h3>Cadê a Água? A Gente Não Aguenta Mais!</h2>
+            <div class="card-reclamacao" id="card-meu">
+                <div class="tags-reclamacoes">
+                    <span class="esgoto-reclamacao">#Esgoto</span>
+                </div>
+                <div class="desc-card-reclamacao">
+                    <img src="../../img/paginas/reclamacoes/user2.jpg" alt="">
+                    <h3>Meu esgoto quebrou, estou sem minhas necessidades</h3>
+                </div>
+                <div class="link-card-reclamacao">
+                    <span>Clique para ver mais sobre</span>
+                </div>
             </div>
-            <div class="card-reclamacao" id="card-estamos">
-                <img src="../../img/paginas/reclamacoes/user3.jpg" alt="">
-                <h3>Estamos Sem Água! Como Resolver Isso</h3>
+            <div class="card-reclamacao" id="card-poluiram">
+                <div class="tags-reclamacoes">
+                    <span class="poluicao-reclamacao">#Poluicao</span>
+                </div>
+                <div class="desc-card-reclamacao">
+                    <img src="../../img/paginas/reclamacoes/user3.jpg" alt="">
+                    <h3>Poluiram a minha casa, alguém sabe o que fazer?</h3>
+                </div>
+                <div class="link-card-reclamacao">
+                    <span>Clique para ver mais sobre</span>
+                </div>
             </div>
-            <div class="card-reclamacao" id="card-falta">
-                <img src="../../img/paginas/reclamacoes/user4.jpg" alt="">
-                <h3>Falta de Água na Nossa Casa, E Agora?</h3>
+            <div class="card-reclamacao" id="card-meu">
+                <div class="tags-reclamacoes">
+                    <span class="falta-reclamacao">#Falta de água</span>
+                </div>
+                <div class="desc-card-reclamacao">
+                    <img src="../../img/paginas/reclamacoes/user4.jpg" alt="">
+                    <h3>Meu bairro está sem água a mais ou menos 2 meses, preciso de suporte</h3>
+                </div>   
+                <div class="link-card-reclamacao">
+                    <span>Clique para ver mais sobre</span>
+                </div>
             </div>
-            <div class="card-reclamacao" id="card-problemas">
-                <img src="../../img/paginas/reclamacoes/user5.jpg" alt="">
-                <h3>Problemas com Saneamento Aqui na Rua</h3>
+            <div class="card-reclamacao" id="card-minha">
+                <div class="tags-reclamacoes">
+                    <span class="vazamento-reclamacao">#Vazamento</span>
+                </div>
+                <div class="desc-card-reclamacao">
+                    <img src="../../img/paginas/reclamacoes/user5.jpg" alt="">
+                    <h3>Minha torneira está saindo água demais, socorro!</h3>
+                </div>   
+                <div class="link-card-reclamacao">
+                    <span>Clique para ver mais sobre</span>
+                </div>
             </div>
+            <!-- Demais Notícias -->
             <div class="card-nenhuma-reclamacao">
                 <img src="../../img/paginas/reclamacoes/nao-encontrado.png" alt="">
-                <h3>Nenhuma reclamação encontrada com esse filtro!</h3>
+                <h3>Nenhuma notícia encontrada com esse filtro!</h3>
+                <div class="link-card-reclamacao">
+                    <span>Clique para ver mais sobre</span>
+                </div>
             </div>
         </div>
     </main>
@@ -86,9 +148,9 @@
                 <h3>Reclamações</h3>
             </div>
             <div class="links-footer">
-                <a href="../informacoes/reclamacoes.html">Reclame Já</a>
-                <a href="../informacoes/noticias.html">Ver Notícias</a>
-                <a href="../informacoes/reclamacoes.html">Visualizar Reclamações</a>
+                <a href="../reclamacao/reclamacoes.html">Reclame Já</a>
+                <a href="../informacoes/reclamacoes.html">Ver Notícias</a>
+                <a href="../reclamacao/reclamacoes.html">Visualizar Reclamações</a>
             </div>
         </div>
         <div class="footer-informacoes">
@@ -98,7 +160,7 @@
             <div class="links-footer">
                 <a href="../index.html">Com quem falar?</a>
                 <a href="../sobrenos/sobrenos.html">Sobre Nós</a>
-                <a href="../informacoes/doencas.html">Doenças Relacionadas</a>
+                <a href="../informacoes/reclamacoes.html">Doenças Relacionadas</a>
             </div>
         </div>
         <div class="footer-faleConosco">
