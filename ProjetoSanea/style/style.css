@@ -9,6 +9,7 @@
     --cor-fundo: white;
     --cor-form-login: #DADADA;
     --cor-fonte-links: #414141;
+    --cor-bloco-comentario:#98c1de;
 
     /* Fontes */
     --familia-primaria: poppins, sans-serif;
@@ -56,7 +57,7 @@
     --sobrenos-titulo: 32px;
 
     /* Comentários da Reclamação */
-    --comentario-titulo: 40px;
+    --comentario-titulo: 20px;
     --comentario-reclamacao: 20px;
 }
 

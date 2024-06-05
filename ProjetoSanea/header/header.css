@@ -7,20 +7,21 @@
     flex-wrap: wrap;
     height: auto;
     background-color: var(--cor-primaria);
-    position: fixed;
+
+    /* position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 999; */
     width: 100%;
-    z-index: 999;
 }
 
 body {
     background-color: #E9E9E9;
 }
 
-.header + main{
+/* .header + main{
     margin-top: 100px;
-}
+} */
 
 @media (max-width: 1050px) {
     .header + main{
