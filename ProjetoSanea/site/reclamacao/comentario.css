@@ -75,6 +75,8 @@ section .novo-cometario{
     flex-wrap: wrap;
     gap: 50px;
    justify-content: center;
+   align-items: flex-end;
+   transition: .4s;
 }
 section .novo-cometario textarea{
     border-radius: 20px;
@@ -85,7 +87,27 @@ section .novo-cometario textarea{
     align-content: center;
     text-align: left;
     border-style: hidden;
+    font-size: 16px;
+    font-weight: 300;
 }
 section .novo-cometario textarea:focus{
-    border-style: hidden;
+    outline: none; 
+    overflow: hidden;
+}
+section .novo-cometario button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    border-style: none;
+    transition: .5s;
+}
+section .novo-cometario button:hover{
+    box-shadow: 1px 2px 8px rgb(0, 0, 0);
+}
+section .novo-cometario button img{
+    transition: .7s;
+}
+section .novo-cometario button img:hover{
+    transform: scale(1.3);
 }
