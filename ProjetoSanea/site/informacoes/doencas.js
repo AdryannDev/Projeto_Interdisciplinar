@@ -1,3 +1,4 @@
+let link_doenca = document.getElementById("doencas_navbar_link");
 let fil_doenca = document.getElementById("input-filtro-doencas");
 let cancelar_fil_doenca = document.getElementById("cancelar-pesquisa-doencas");
 let cards_doencas = document.querySelectorAll(".card-doenca");
@@ -8,6 +9,9 @@ let select_fil_doenca = document.getElementById("select-doencas");
 
 ScrollReveal().reveal('.banner-doencas',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.2, distance: "80px"});
 ScrollReveal().reveal('.img-banner-doencas',{origin: "bottom", duration: 2000, easing: 'ease', opacity: 0.2, distance: "40px"});
+
+link_doenca.classList.add("active");
+link_doenca.classList.remove("navbar-header-link");
 
 if(!fil_doenca.value){
     cancelar_fil_doenca.style.display = "none";
