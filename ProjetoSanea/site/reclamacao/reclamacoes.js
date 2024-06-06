@@ -1,3 +1,4 @@
+let link_reclamacoes = document.getElementById("reclamacoes_navbar_link");
 let fil_reclamacao = document.getElementById("input-filtro-reclamacoes");
 let cancelar_fil_reclamacao = document.getElementById("cancelar-pesquisa-reclamacoes");
 let cards_reclamacoes = document.querySelectorAll(".card-reclamacao");
@@ -9,6 +10,8 @@ let select_fil_reclamacao = document.getElementById("select-reclamacoes");
 ScrollReveal().reveal('.banner-reclamacoes',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.2, distance: "100px"});
 ScrollReveal().reveal('.img-banner-reclamacoes',{origin: "bottom", duration: 2000, easing: 'ease', opacity: 0.2, distance: "40px"});
 
+link_reclamacoes.classList.add("active");
+link_reclamacoes.classList.remove("navbar-header-link");
 
 //Função ao utilizar o input para escrever
 fil_reclamacao.addEventListener('input', function(){

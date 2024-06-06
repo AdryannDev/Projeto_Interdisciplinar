@@ -1,3 +1,4 @@
+let link_noticia = document.getElementById("noticias_navbar_link");
 let fil_noticia = document.getElementById("input-filtro-noticias");
 let cancelar_fil_noticia = document.getElementById("cancelar-pesquisa-noticias");
 let cards_noticias = document.querySelectorAll(".card-noticia");
@@ -9,6 +10,8 @@ let select_fil_noticia = document.getElementById("select-noticias");
 ScrollReveal().reveal('.banner-noticias',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.2, distance: "100px"});
 ScrollReveal().reveal('.img-banner-noticias',{origin: "bottom", duration: 2000, easing: 'ease', opacity: 0.2, distance: "40px"});
 
+link_noticia.classList.add("active");
+link_noticia.classList.remove("navbar-header-link");
 
 //Função ao utilizar o input para escrever
 fil_noticia.addEventListener('input', function(){
