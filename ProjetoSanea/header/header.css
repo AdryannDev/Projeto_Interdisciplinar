@@ -7,11 +7,10 @@
     flex-wrap: wrap;
     height: auto;
     background-color: var(--cor-primaria);
-
-    /* position: fixed;
+    position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 999; */
+    z-index: 999;
     width: 100%;
 }
 

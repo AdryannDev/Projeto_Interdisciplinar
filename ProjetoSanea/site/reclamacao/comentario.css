@@ -69,3 +69,23 @@ section .corpo-cometario .cometario{
 section .corpo-cometario .cometario h3{
     text-align: end;
 }
+section .novo-cometario{
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+   justify-content: center;
+}
+section .novo-cometario textarea{
+    border-radius: 20px;
+    background-color: var(--cor-terciaria);
+    width: 40%;
+    padding: 0 15px;
+    resize: none;
+    align-content: center;
+    text-align: left;
+    border-style: hidden;
+}
+section .novo-cometario textarea:focus{
+    border-style: hidden;
+}
