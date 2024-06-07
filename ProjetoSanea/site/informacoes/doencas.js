@@ -92,3 +92,14 @@ cards_doencas.forEach(card => {
         window.location.href = `view_doencas.html`;
     });
 })
+
+nenhuma_doenca.addEventListener("click", function(){
+    cards_doencas.forEach(card => {
+        card.style.display = "flex";
+    });
+    cancelar_fil_doenca.style.display = "none";
+    fil_doenca.value = "";
+    select_fil_doenca.value = "todos";
+    resultados_doenca.style.display = "none";
+    nenhuma_doenca.style.display = "none";
+});
