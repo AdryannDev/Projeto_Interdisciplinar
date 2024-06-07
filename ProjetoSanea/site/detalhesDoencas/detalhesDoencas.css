@@ -1,0 +1,71 @@
+@import url(style.css);
+@import url(header.css);
+@import url(footer.css);
+
+.div-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 220px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--cor-secundaria);
+    flex-direction: column;
+}
+.informacoes{
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    width: 95%;
+}
+#imagem-doenca img{
+width: 250px;
+border-radius: 5px;
+border:5px solid var(--cor-fundo);
+margin: 20px;
+}
+.texto h2{
+    font-size: var(--fonte-terciaria);
+    font-family: var(--familia-primaria);
+}
+.texto p{
+    font-size: var(--fonte-primaria);
+    font-family: var(--familia-primaria);
+    text-align: justify;
+}
+hr{
+    width: 95%;
+    height: 1px;
+    border-color: black;
+    background-color: black;
+}
+.doenca{
+    width: 90%;
+}
+.doenca ul{
+    margin-left: 30px;
+}
+a{
+    color: var(--cor-fonte-links);
+    text-decoration: none;
+}
+#botaoVoltar{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;  
+    color: #2e2e2e;
+    font-weight: bold;
+    transition: 0.5s all ease;
+}
+#botaoVoltar:hover{
+    height: 20px;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 20px;
+}
