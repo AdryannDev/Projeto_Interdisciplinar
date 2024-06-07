@@ -252,6 +252,7 @@
         
     .card-doenca, .card-nenhuma-doenca{
         width: 70%;
+        text-align: center;
     }
 
     .desc-card-doenca{
@@ -262,4 +263,9 @@
         gap: 20px;
     }
 
+    .card-doenca img, .card-nenhuma-doenca img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
 }

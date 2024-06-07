@@ -64,3 +64,31 @@ footer .footer-faleConosco{
     padding-right: 20px;
     width: 20px;
 }
+
+@media (max-width: 900px){
+    footer .footer-informacoes{
+        padding: 12px 20px;
+        border-left: none;
+        border-right: none
+    }
+
+
+    footer .footer-reclamacoes, footer .footer-informacoes, footer .footer-faleConosco{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 40%;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    footer .footer-reclamacoes, footer .footer-informacoes, footer .footer-faleConosco{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+}

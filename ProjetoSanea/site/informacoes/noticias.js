@@ -116,30 +116,6 @@ function input_filtro_noticia(pesquisa){
             nenhuma_noticia.style.display = "flex";
         }
     });
-
-    // for(let i = 0; i < cards_noticias.length; i++) { //Faz para cada CARD
-    //     let card_id = cards_noticias[i].id;
-    //     if(card_id.includes(`card-${pesquisa.value.toLowerCase()}`)){ //Verif se o valor inserido é igual ao id do CARD
-    //         cards_noticias[i].style.display = "flex";
-    //         cont_resultados--;
-    //     }
-    //     else{
-    //         cards_noticias[i].style.display = "none";
-    //         resultados_noticia.style.display = "flex";
-    //     }
-    //     num_resultados = cards_noticias.length - cont_resultados;
-
-    //     if(num_resultados == 1){
-    //         span_resultados.innerHTML = `${num_resultados} resultados para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>`;
-    //         nenhuma_noticia.style.display = "none";
-    //     } else if(num_resultados > 1){
-    //         span_resultados.innerHTML = `${num_resultados} resultados para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>`;
-    //         nenhuma_noticia.style.display = "none";
-    //     } else{//Se não encontrar um resultado
-    //         span_resultados.innerHTML = `Nenhum resultado encontrado para <span class="palavra-filtro-noticias"> "${pesquisa.value}"</span>` ;
-    //         nenhuma_noticia.style.display = "flex";
-    //     }
-    // }
 }
 
 //Função para resetar filtro
@@ -177,3 +153,14 @@ function display_pesquisa(acao){
             break;
     }
 }
+
+nenhuma_noticia.addEventListener("click", function(){
+    cards_noticias.forEach(card => {
+        card.style.display = "flex";
+    });
+    cancelar_fil_noticia.style.display = "none";
+    fil_noticia.value = "";
+    select_fil_noticia.value = "todos";
+    resultados_noticia.style.display = "none";
+    nenhuma_noticia.style.display = "none";
+});
