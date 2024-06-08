@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     background-color: #F0F0F0;
     margin: 32px 122px 72px 122px;
-    font-size: var(--doencas-texto);
+    font-size: var(--reclamacoes-texto);
     border-radius: 20px;
     padding: 30px 10px;
     gap: 20px;
@@ -35,6 +35,10 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.pesquisa-reclamacoes h2{
+    word-break: break-all;
 }
 
 .filtro-pesquisa-reclamacoes{
@@ -174,6 +178,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     color: #ebebeb;
     background-color: var(--cor-primaria);
     padding: 10px;
@@ -231,3 +236,62 @@
     border-radius: 10px;
 }
 
+@media (max-width:900px){
+    .banner-reclamacoes{
+        margin: 0px;
+        font-size: 12px;
+    }
+
+    .img-banner-reclamacoes img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .texto-banner-reclamacoes{
+        width: 280px;
+    }
+}
+
+@media (max-width: 515px){
+    .input-pesquisa-reclamacoes input{
+        width: 200px;
+    }
+
+    #select-reclamacoes{
+        width: 200px;
+    }
+
+    .cards-reclamacoes{
+        margin: 40px 10px 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .card-reclamacao{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+        
+    .card-reclamacao, .card-nenhuma-reclamacao{
+        width: 70%;
+        text-align: center;
+    }
+
+    .desc-card-reclamacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-reclamacao img, .card-nenhuma-reclamacao img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+}

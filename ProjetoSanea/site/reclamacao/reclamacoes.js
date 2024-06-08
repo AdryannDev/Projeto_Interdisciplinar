@@ -177,3 +177,15 @@ function display_pesquisa(acao){
             break;
     }
 }
+
+
+nenhuma_reclamacao.addEventListener("click", function(){
+    cards_reclamacoes.forEach(card => {
+        card.style.display = "flex";
+    });
+    cancelar_fil_reclamacao.style.display = "none";
+    fil_reclamacao.value = "";
+    select_fil_reclamacao.value = "todos";
+    resultados_reclamacao.style.display = "none";
+    nenhuma_reclamacao.style.display = "none";
+});

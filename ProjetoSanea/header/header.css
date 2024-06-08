@@ -111,3 +111,12 @@ body {
 .navbar-header .active:hover{
     border-bottom: 4px solid #ffffffaf;
 }
+
+@media (max-width: 400px){
+    .logo-header img{
+        width: 200px;
+        height: 80px;
+        filter: drop-shadow(2px 2px 20px #6b6b6b);
+        transition: 0.6s opacity;
+    }
+}
