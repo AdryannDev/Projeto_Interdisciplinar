@@ -4,13 +4,13 @@
 section{
     padding: 10px 55px;
     display: flex;
-    height: 55vh;
+    height: auto;
 }
 section .txt h2{
     padding-bottom: 20px;
     font-size: var(--sobrenos-titulo);
 }
-section .txt p, span{
+section .txt p, span{   
     font-size: var(--fonte-secundaria);
 }
 .empresa{
@@ -33,11 +33,7 @@ section .txt p, span{
     width: 50%;
 }
 .empresa .imagem img{
-    height: 12vw;
-    transition: .7s;
-}
-.empresa .imagem img:hover{
-    transform: scale(1.3);
+    height: 15vw;
 }
 .empresa .imagem h2, .desenvolvedores h2 {
     font-size: var(--sobrenos-titulo);
@@ -45,18 +41,16 @@ section .txt p, span{
 .nossoObjetivo{
     align-content: center;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-between;  
     background-color: var(--cor-secundaria);
 }
 .nossoObjetivo .txt{
-    height: 100%;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-grow: 0.5;
 }
 .nossoObjetivo .txt p{
     text-align: justify;
@@ -65,7 +59,7 @@ section .txt p, span{
     height: 100%;
 }
 .nossoObjetivo .imagem img{
-    height: 100%;
+    height: 300px;
 }
 .desenvolvedores{
     display: flex;
@@ -99,4 +93,10 @@ section .txt p, span{
 .desenvolvedores .imgDevs .dev img:hover{
     transform: scale(1.12);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
+}
+@media (max-width: 850px) {
+    .empresa, .nossoObjetivo{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
 }
