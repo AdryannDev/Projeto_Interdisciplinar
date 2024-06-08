@@ -1,7 +1,7 @@
 function autoResize() {
     objTextArea = document.getElementById('comentario');
     if (objTextArea.value){
-        if (objTextArea.scrollHeight > objTextArea.offsetHeight) {
+        if (objTextArea.scrollHeight > objTextArea.offsetHeight){
             objTextArea.rows += 1;
         }
     }
