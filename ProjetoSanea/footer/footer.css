@@ -15,8 +15,7 @@ footer .footer-reclamacoes, footer .footer-informacoes, footer .footer-faleConos
     background-color: var(--cor-primaria);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 30%
+    flex-grow: 1;
 }
 footer .footer-reclamacoes{
     margin-left: 20px;
@@ -28,7 +27,7 @@ footer .footer-reclamacoes{
     font-size: var(--fonte-primaria);
 }
 .links-footer{
-    padding: 10px 0;
+    padding: 10px 10px;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -65,23 +64,21 @@ footer .footer-faleConosco{
     width: 20px;
 }
 
-@media (max-width: 900px){
+@media (max-width: 729px){
     footer .footer-informacoes{
-        padding: 12px 20px;
-        border-left: none;
-        border-right: none
+        border-right: none;
     }
-
-
-    footer .footer-reclamacoes, footer .footer-informacoes, footer .footer-faleConosco{
-        display: flex;
+    footer .footer-reclamacoes, footer .footer-informacoes{ 
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: flex-start;
-        width: 40%;
-        margin-left: 30px;
+        margin: auto;
     }
+    footer .footer-faleConosco{
+        flex-grow: 2;
+        padding: 0 20px;
+        border-top:5px solid #999898;
+    }
+    
 }
 
 @media (max-width: 500px){
