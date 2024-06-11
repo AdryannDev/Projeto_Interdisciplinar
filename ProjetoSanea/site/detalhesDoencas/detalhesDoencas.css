@@ -51,21 +51,8 @@ a{
     text-decoration: none;
 }
 #botaoVoltar{
-    visibility: hidden;
+    width: 90%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 0px;
-    opacity: 0;
-    transition: 0.4s all ease-in-out;  
-    color: #2e2e2e;
-    font-weight: bold;
-    transition: 0.5s all ease;
-}
-#botaoVoltar:hover{
-    height: 20px;
-    visibility: visible;
-    opacity: 1;
-    margin-top: 20px;
+    margin:10px;
+    justify-content: flex-end;
 }
