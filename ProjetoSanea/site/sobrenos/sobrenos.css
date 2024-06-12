@@ -33,7 +33,8 @@ section .txt p, span{
     width: 50%;
 }
 .empresa .imagem img{
-    height: 15vw;
+    height: 16vw;
+    
 }
 .empresa .imagem h2, .desenvolvedores h2 {
     font-size: var(--sobrenos-titulo);
@@ -94,9 +95,13 @@ section .txt p, span{
     transform: scale(1.12);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
 }
-@media (max-width: 850px) {
-    .empresa, .nossoObjetivo{
-        flex-direction: column-reverse;
-        width: 100%;
+@media (max-width: 860px) {
+    .nossoObjetivo{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .nossoObjetivo .txt{
+        align-items: center;
+        width: 80%;
     }
 }
