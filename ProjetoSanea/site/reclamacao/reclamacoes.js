@@ -156,7 +156,7 @@ cancelar_fil_reclamacao.addEventListener('click', function(){
 cards_reclamacoes.forEach(card => {
     card.addEventListener('click', function(){
         // window.location.href = `view_reclamacoes.html?${card.id.substring(5)}`; -> codigo para view com variavel com o nome da doença
-        window.location.href = `view_reclamacoes.html`;
+        window.location.href = `../informacoes/detalhesInformacoes/detalhesReclamacao/detalhesReclamacao.html`;
     });
 })
 

@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #F0F0F0;
+    background: #F0F0F0;
     margin: 32px 122px 72px 122px;
     font-size: var(--doencas-texto);
     border-radius: 20px;
@@ -17,7 +17,7 @@
 
 .texto-banner-doencas span{
     text-wrap: wrap;
-    text-align: justify;
+    text-align: center;
 }
 
 .img-banner-doencas img{
@@ -154,6 +154,7 @@
     width: 70%;
     cursor: pointer;
     font-weight: 500;
+    transition: 0.4s all ease;
 }
 
 .corpo-card-doenca{
@@ -184,8 +185,12 @@
 }
 
 .card-doenca:hover{
-    /* box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.308); */
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
+    background: rgba( 123, 174, 210, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
 }
 
 .card-doenca:hover .link-card-doenca{

@@ -89,7 +89,7 @@ cancelar_fil_doenca.addEventListener('click', function(){
 cards_doencas.forEach(card => {
     card.addEventListener('click', function(){
         // window.location.href = `view_doencas.html?${card.id.substring(5)}`; -> codigo para view com variavel com o nome da doença
-        window.location.href = `view_doencas.html`;
+        window.location.href = `detalhesInformacoes/detalhesDoencas/detalhesDoencas.html`;
     });
 })
 

@@ -132,7 +132,7 @@ cancelar_fil_noticia.addEventListener('click', function(){
 cards_noticias.forEach(card => {
     card.addEventListener('click', function(){
         // window.location.href = `view_noticias.html?${card.id.substring(5)}`; -> codigo para view com variavel com o nome da doença
-        window.location.href = `view_noticias.html`;
+        window.location.href = `detalhesInformacoes/detalhesNoticias/detalhesNoticias.html`;
     });
 })
 
