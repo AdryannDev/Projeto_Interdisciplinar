@@ -8,19 +8,21 @@
     <link rel="shortcut icon" href="../ico/icon_saneaSP.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <div class="logo-header">
-            <a href="index.html"><img src="../../img/logos/logo_saneaSP.svg" alt="Logo do site" id="logo_header"></a>
+    <header id="header">
+        <div id="logo-header">
+            <a href="../index.html"><img src="../../img/logos/logo_sanea.svg" alt="Ir para a página principal" id="logo_header"></a>
         </div>
-        <div class="navbar-header">
-            <a href="informacoes/doencas.html">Doenças</a>
-            <a href="reclamacoes/reclamacoes.html">Reclamações</a>
-            <a href="informacoes/noticias.html">Notícias</a>
-        </div>
-        <div class="login-header">
-            <a href="login/login.html"><img src="../../img/header/usuario_login.svg" alt="Login" id="icon_login"></a>
-            <a href="login/login.html"><span>Login</span></a>
-        </div>
+        <nav id="navbar-header">
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="navbar-links" role="menu">
+                <li><a href="../informacoes/doencas.html" id="doencas_navbar_link" class="navbar-header-link"><img src="../../img/header/doencas_icone.svg" alt="ícone de doenças">Doenças</a></li>
+                <li><a href=""  id="reclamacoes_navbar_link" class="navbar-header-link"><img src="../../img/header/reclamacoes_icone.svg" alt="ícone de doenças">Reclamações</a></li>
+                <li><a href="../informacoes/noticias.html"  id="noticias_navbar_link" class="navbar-header-link"><img src="../../img/header/noticias_icone.svg" alt="ícone de doenças">Notícias</a></li>
+                <li id="login-navbar"><a href="../login/login.html"><img src="../../img/header/usuario_login.svg" alt="Ir para a página de login" id="icon_login"><span>Login</span></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
@@ -98,5 +100,6 @@
         </div>
     </footer>
     <script src="comentario.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html> 

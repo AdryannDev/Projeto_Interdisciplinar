@@ -5,6 +5,7 @@ section{
     padding: 10px 55px;
     display: flex;
     height: auto;
+    width: auto;
 }
 section .txt h2{
     padding-bottom: 20px;
