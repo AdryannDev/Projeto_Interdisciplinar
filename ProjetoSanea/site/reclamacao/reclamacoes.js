@@ -11,7 +11,6 @@ ScrollReveal().reveal('.banner-reclamacoes',{origin: "left", duration: 2000, eas
 ScrollReveal().reveal('.img-banner-reclamacoes',{origin: "bottom", duration: 2000, easing: 'ease', opacity: 0.2, distance: "40px"});
 
 link_reclamacoes.classList.add("active");
-link_reclamacoes.classList.remove("navbar-header-link");
 
 //Função ao utilizar o input para escrever
 fil_reclamacao.addEventListener('input', function(){

@@ -11,7 +11,6 @@ ScrollReveal().reveal('.banner-noticias',{origin: "left", duration: 2000, easing
 ScrollReveal().reveal('.img-banner-noticias',{origin: "bottom", duration: 2000, easing: 'ease', opacity: 0.2, distance: "40px"});
 
 link_noticia.classList.add("active");
-link_noticia.classList.remove("navbar-header-link");
 
 //Função ao utilizar o input para escrever
 fil_noticia.addEventListener('input', function(){
