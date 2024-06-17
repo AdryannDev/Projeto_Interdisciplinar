@@ -1,3 +1,11 @@
+const opcoesMenu = document.querySelectorAll('.opcao-menu')
+
+opcoesMenu.forEach(opcao=>{
+    opcao.addEventListener('click',function(){
+        window.location.href=`informacoes/${opcao.id}.html`
+    })
+})
+
 const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu(event){
@@ -16,3 +24,4 @@ function toggleMenu(event){
 
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
+
