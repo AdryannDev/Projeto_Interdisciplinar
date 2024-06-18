@@ -13,15 +13,14 @@ main{
 
 .formulario-cadastro{
     width: 935px;
-    height: 600px; /* No figma é 514px*/
-    background-color: var(--cor-form-login);
+    height: 600px; 
     margin: 49px 0px;
+    border-radius: 10px;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 10px;
+    background-color: var(--cor-form-login);
 }
 
 .formulario-cadastro h1{
@@ -151,4 +150,19 @@ main{
 
 #link-cadastro{
     color: var(--cor-fonte-link);
+}
+
+@media (max-width: 948px){
+    .formulario-cadastro{
+        justify-content: center;
+        height: auto;
+    }
+    .cadastro-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cadastro-inputs input{
+        width: 80vw;
+    }
 }

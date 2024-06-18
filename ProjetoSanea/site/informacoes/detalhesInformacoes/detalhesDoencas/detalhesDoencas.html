@@ -10,19 +10,21 @@
 </head>
 <body>
     <!-- Inicio header -->
-    <header class="header">
-        <div class="logo-header">
-            <a href="../../../index.html"><img src="../../../../img/logos/logo_saneaSP.png" alt="Logo do site" id="logo_header"></a>
-        </div>
-        <div class="navbar-header">
-            <a href="../../doencas.html">Doenças</a>
-            <a href="../../../reclamacao/reclamacoes.html">Reclamações</a>
-            <a href="../../noticias.html">Notícias</a>
-        </div>
-        <div class="login-header">
-            <a href="../../../login/cadastro.html"><img src="../../../../img/header/usuario_login.svg" alt="Login" id="icon_login"></a>
-            <a href="../../../login/cadastro.html"><span>Login</span></a>
-        </div>
+    <header id="header">
+    <div id="logo-header">
+        <a href=""><img src="../../../../img/logos/logo_sanea.svg" alt="Ir para a página principal" id="logo_header"></a>
+    </div>
+    <nav id="navbar-header">
+        <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburguer"></span>
+        </button>
+        <ul id="navbar-links" role="menu">
+            <li><a href="../../doencas.html" id="doencas_navbar_link" class="navbar-header-link"><img src="../../../../img/header/doencas_icone.svg" alt="ícone de doenças">Doenças</a></li>
+            <li><a href="../../../reclamacao/reclamacoes.html"  id="reclamacoes_navbar_link" class="navbar-header-link"><img src="../../../../img/header/reclamacoes_icone.svg" alt="ícone de doenças">Reclamações</a></li>
+            <li><a href="../../noticias.html"  id="noticias_navbar_link" class="navbar-header-link"><img src="../../../../img/header/noticias_icone.svg" alt="ícone de doenças">Notícias</a></li>
+            <li id="login-navbar"><a href=""><img src="../../../../img/header/usuario_login.svg" alt="Ir para a página de login" id="icon_login"><span>Login</span></a></li>
+        </ul>
+    </nav>
     </header>
     <!-- Fim header -->
     <!-- Inicio detalhes doenças -->
@@ -31,7 +33,7 @@
             <div id="imagem-doenca">
                 <img src="https://s3.static.brasilescola.uol.com.br/be/2021/08/schistosoma-mansoni.jpg" alt="imagem doença">
             </div>
-            <div class="texto">
+            <div id="texto">
                 <h2>Esquistossomose</h2>
                 <p>Transmissão:</p>
                 <p>
@@ -111,9 +113,9 @@
                 <h3>Reclamações</h3>
             </div>
             <div class="links-footer">
-                <a href="../site/informacoes/reclamacoes.html">Reclame Já</a>
-                <a href="../../noticias.html">Ver Notícias</a>
-                <a href="../site/informacoes/reclamacoes.html">Visualizar Reclamações</a>
+                <a href="../../../reclamacao/reclamacoes.html">Reclame Já</a>
+                <a href="../../informacoes/noticias.html">Ver Notícias</a>
+                <a href="../../reclamacao/reclamacoes.html">Visualizar Reclamações</a>
             </div>
         </div>
         <div class="footer-informacoes">
@@ -132,23 +134,24 @@
             </div>
             <div class="links-footer">
                 <div class="box-footer">
-                    <img src="../../../../img/footer/phone.svg" alt="icone de telefone">
+                    <img src="../../../../img/footer/telefone_footer.svg" alt="Telefone do SaneaSP">
                     <a href="tell:(15)99138-6263">(15) 99138-6263</a>   
                 </div>
                 <div class="box-footer">
-                    <img src="../../../../img/footer/instagram.svg" alt="icone de telefone">
+                    <img src="../../../../img/footer/instagram.svg" alt="Instagram do SaneaSP">
                     <a target="_blank" href="#">@saneaSP</a>   
                 </div>
                 <div class="box-footer">
-                    <img src="../../../../img/footer/linkedin.svg" alt="icone de telefone">
+                    <img src="../../../../img/footer/linkedin.svg" alt="Linkedin do SaneaSP">
                     <a target="_blank" href="#">SaneaSP</a>   
                 </div>
                 <div class="box-footer">
-                    <img src="../../../../img/footer/email_footer.svg" alt="icone de telefone">
+                    <img src="../../../../img/footer/email_footer.svg" alt="Email do SaneaSP">
                     <a href="mailto:saneaSP@gmail.com">saneaSP@gmail.com</a>   
                 </div>
             </div>
         </div>
     </footer>
     <!-- Fim footer -->
+    <script src="../../../script.js"></script>
 </body>
