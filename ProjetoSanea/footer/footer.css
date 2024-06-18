@@ -18,7 +18,7 @@ footer .footer-reclamacoes, footer .footer-informacoes, footer .footer-faleConos
     flex-grow: 1;
 }
 footer .footer-reclamacoes{
-    margin-left: 20px;
+    padding-left: 20px;
 }
 .titulo-footer{
     display: flex;
@@ -64,28 +64,28 @@ footer .footer-faleConosco{
     width: 20px;
 }
 
-@media (max-width: 729px){
-    footer .footer-informacoes{
-        border-right: none;
+@media (max-width:483px) {
+    footer{
+        align-items: center;
     }
-    footer .footer-reclamacoes, footer .footer-informacoes{ 
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: auto;
+    .links-footer{
+        text-decoration: underline;
+    }
+    footer .footer-informacoes{
+        border-bottom: 5px solid #999898;
+        border-left: none;
+    }
+    footer .footer-reclamacoes{
+        border-bottom: 5px solid #999898;
     }
     footer .footer-faleConosco{
-        flex-grow: 2;
-        padding: 0 20px;
-        border-top:5px solid #999898;
+        padding: 12px 20px;
     }
-    
+}
+@media (max-width:734px) {
+    footer .footer-informacoes{
+        padding-left: 25px;
+        border-right: none;
+    }
 }
 
-@media (max-width: 500px){
-    footer .footer-reclamacoes, footer .footer-informacoes, footer .footer-faleConosco{
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-left: 0px;
-    }
-}
