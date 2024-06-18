@@ -1,11 +1,4 @@
-const opcoesMenu = document.querySelectorAll('.opcao-menu')
-
-opcoesMenu.forEach(opcao=>{
-    opcao.addEventListener('click',function(){
-        window.location.href=`informacoes/${opcao.id}.html`
-    })
-})
-
+//Menu hambúrguer
 const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu(event){

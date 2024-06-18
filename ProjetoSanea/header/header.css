@@ -22,7 +22,7 @@ body {
 /* Imagem */
 
 #logo-header img{
-    width: auto;
+    width: 240px;
     height: var(--header-altura);
     transition: 0.6s opacity;
     margin-bottom: 20px;
