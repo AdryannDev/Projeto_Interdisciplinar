@@ -12,10 +12,10 @@ main{
 }
 
 .formulario-login{
-    width: 468px;
-    height: 560px; /* No figma é 514px*/
+    width: 440px;
+    height: 520px; /* No figma é 514px*/
     background-color: var(--cor-form-login);
-    margin: 49px 0px;
+    margin: 20px 0px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -37,7 +37,7 @@ main{
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 10px;
     gap: 16px;
 }
 
@@ -46,6 +46,7 @@ main{
     justify-content: center;
     align-items: start;
     flex-direction: column;
+    gap: 2px;
 }
 
 .login-inputs label{
@@ -56,10 +57,10 @@ main{
     background-color: #575757;
     border-radius: 10px;
     width: 268px;
-    height: 45px;
+    height: 40px;
     border: 0px;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     padding: 2px 0px 2px 15px;
     transition: 0.5s all;
 }
@@ -97,7 +98,7 @@ main{
 }
 
 #login-botao{
-    width: 266px;
+    width: 206px;
     height: 46px;
     margin-top: 32px;
     font-size: var(--login-botao);
@@ -120,7 +121,7 @@ main{
 }
 
 .entrar-redes{
-    margin-top: 36px;
+    margin-top: 16px;
     width: 220px;
     display: flex;
     justify-content: space-between;
@@ -137,10 +138,46 @@ main{
     margin-bottom: 15px;
 }
 
+.direcionar-redefinir-senha{
+    margin-top: 18px;
+}
+
 .login-texto{
     font-size: var(--login-texto);
 }
 
-#link-cadastro{
+#link-cadastro, #link-redefinir-senha{
     color: var(--cor-fonte-link);
+    font-size: var(--login-texto)
+}
+
+#status-login-email, #status-login-senha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #8b1818;
+    font-weight: 500;
+}
+
+@media (max-width: 450px){
+    .formulario-login{
+        width: 90vw;
+    }
+    .login-inputs input{
+        width: 60vw;
+    }
+    #login-botao{
+        width: 50vw;
+    }
+    .direcionar-cadastro{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .entrar-redes{
+        width: 50vw;
+        max-width: 200px;
+    }
 }
