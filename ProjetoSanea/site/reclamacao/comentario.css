@@ -111,3 +111,41 @@ section .novo-cometario button img{
 section .novo-cometario button img:hover{
     transform: scale(1.3);
 }
+@media (max-width: 670px) {
+    section .cabecario-comentario .titulo{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    section .cabecario-comentario .titulo h2{
+        padding: 0;
+    }
+}
+@media (max-width: 800px) {
+    section{
+        margin: 20px 15px;
+    }
+    section .novo-cometario{
+        gap: 25px;
+    }
+    section .corpo-cometario .cometario{
+        margin-left: 8%;
+    }
+    section .corpo-cometario .resposta{
+        margin-right: 8%;
+    }
+    section .novo-cometario textarea{
+        width: 80%;
+    }
+    section .novo-cometario button{
+        width: 7%;
+        border: none;
+        background-color:var(--cor-secundaria);
+        padding: 0;
+    }
+    section .novo-cometario button img{
+        width: 80%;
+    }
+}

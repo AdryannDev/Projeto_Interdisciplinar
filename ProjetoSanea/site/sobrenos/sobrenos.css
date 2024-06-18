@@ -5,6 +5,7 @@ section{
     padding: 10px 55px;
     display: flex;
     height: auto;
+    width: auto;
 }
 section .txt h2{
     padding-bottom: 20px;
@@ -29,6 +30,7 @@ section .txt p, span{
 .empresa .imagem{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     width: 50%;
 }
@@ -85,7 +87,7 @@ section .txt p, span{
     font-weight: bolder;
 }
 .desenvolvedores .imgDevs .dev img{
-    width: 60%;
+    width: 50%;
     height: 65%;
     border-radius: 50%;
     transition: .6s;
@@ -95,8 +97,35 @@ section .txt p, span{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
 }
 @media (max-width: 850px) {
+    section{
+        padding: 15px 20px;
+    }
     .empresa, .nossoObjetivo{
         flex-direction: column-reverse;
-        width: 100%;
+    }
+    .empresa .txt, .nossoObjetivo .txt{
+        width: 90%;
+    }
+    .empresa .imagem{
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+    .empresa .imagem img{
+        height: 200px;
+    }
+    .empresa .imagem h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .empresa .txt{
+        text-align: center;
+    }
+    .desenvolvedores .imgDevs .dev{
+        width: 30%;
+        font-size: 16px;
+    }
+    .nossoObjetivo .txt{
+        align-items: center;
     }
 }
