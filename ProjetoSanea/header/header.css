@@ -228,3 +228,13 @@ body {
         transition: 0.6s opacity;
     }
 }
+
+@media (max-width: 280px){
+    #logo-header img{
+       display: none;
+    }
+
+    #header{
+        justify-content: center;
+    }
+}

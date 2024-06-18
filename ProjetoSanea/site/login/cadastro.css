@@ -20,6 +20,7 @@ main{
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 10px;
 }
 
