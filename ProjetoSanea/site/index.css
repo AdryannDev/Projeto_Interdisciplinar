@@ -5,23 +5,29 @@
 .opcoes-menu{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #d9d9d9;
-    height: calc(100vh - 120px);
-
 }
 .opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis {
     display: flex;
     align-items: center;
     gap: 60px;
-    height: 33%;
+    height: 140px;
     padding: 25px 0px 25px 40px;
-    
+    cursor: pointer;
+    transition: 0.2s background-color ease-in;
+    box-sizing: border-box;
+    font-size: 0.9rem; 
 }
 .opcoes-doencas, .opcoes-noticias{
     border-bottom: 2px solid black;
 }
 
 .icone-menu{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+}
+
+.opcoes-doencas:hover, .opcoes-noticias:hover, .opcoes-responsaveis:hover{
+    background-color: rgba(48, 71, 119, 0.329);
 }

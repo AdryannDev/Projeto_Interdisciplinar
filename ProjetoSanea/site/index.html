@@ -6,21 +6,22 @@
     <title>Página Inicial</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="../ico/icon_saneaSP.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header id="header">
         <div id="logo-header">
-            <a href=""><img src="../../img/logos/logo_sanea.svg" alt="Ir para a página principal" id="logo_header"></a>
+            <a href="#"><img src="../../img/logos/logo_sanea.svg" alt="Ir para a página principal" id="logo_header"></a>
         </div>
         <nav id="navbar-header">
             <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
                 <span id="hamburguer"></span>
             </button>
             <ul id="navbar-links" role="menu">
-                <li><a href="" id="doencas_navbar_link" class="navbar-header-link"><img src="../../img/header/doencas_icone.svg" alt="ícone de doenças">Doenças</a></li>
-                <li><a href=""  id="reclamacoes_navbar_link" class="navbar-header-link"><img src="../../img/header/reclamacoes_icone.svg" alt="ícone de doenças">Reclamações</a></li>
-                <li><a href=""  id="noticias_navbar_link" class="navbar-header-link"><img src="../../img/header/noticias_icone.svg" alt="ícone de doenças">Notícias</a></li>
-                <li id="login-navbar"><a href=""><img src="../../img/header/usuario_login.svg" alt="Ir para a página de login" id="icon_login"><span>Login</span></a></li>
+                <li><a href="informacoes/doencas.html" id="doencas_navbar_link" class="navbar-header-link"><img src="../../img/header/doencas_icone.svg" alt="ícone de doenças">Doenças</a></li>
+                <li><a href="reclamacao/reclamacoes.html"  id="reclamacoes_navbar_link" class="navbar-header-link"><img src="../../img/header/reclamacoes_icone.svg" alt="ícone de doenças">Reclamações</a></li>
+                <li><a href="informacoes/noticias.html"  id="noticias_navbar_link" class="navbar-header-link"><img src="../../img/header/noticias_icone.svg" alt="ícone de doenças">Notícias</a></li>
+                <li id="login-navbar"><a href="login/login.html"><img src="../../img/header/usuario_login.svg" alt="Ir para a página de login" id="icon_login"><span>Login</span></a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +33,7 @@
                     <img src="../img/paginas/informacoes/bacteria.svg" alt="" class="icone-menu">
                 </div> 
                 <div class="">
-                    <h1>Doenças</h1>
+                    <h2>Doenças</h2>
                     <p>Verifique as doenças relacionadas e como se previnir</p>
                 </div>
             </div>
@@ -41,8 +42,8 @@
                     <img src="../img/paginas/informacoes/noticias.svg" alt="" class="icone-menu">
                 </div> 
                 <div class="">
-                    <h1>Noticias</h1>
-                    <p>Veja algumas das principais notícias sobre saneamento basico e distribuição de água potável</p>
+                    <h2>Noticias</h2>
+                    <p>Veja algumas das principais notícias sobre saneamento básico e distribuição de água potável</p>
                 </div>
             </div>
             <div class="opcoes-responsaveis opcao-menu" id="responsaveis">
@@ -50,18 +51,12 @@
                     <img src="../img/paginas/informacoes/responsaveis.svg" alt=""class="icone-menu" >
                 </div> 
                 <div class="">
-                    <h1>Responsáveis pelo saneamento</h1>
+                    <h2>Responsáveis pelo saneamento</h2>
                     <p>Visualize os principais responsáveis pelo saneamento básico e o que fazer para contribuir para o saneamento básico da sua cidade</p>
                 </div>
             </div>
        
         <div>
-
-        </div>
-        <div>
-
-        </div>
-        </div>
     </main>
     <footer>
         <div class="footer-reclamacoes">
@@ -69,9 +64,9 @@
                 <h3>Reclamações</h3>
             </div>
             <div class="links-footer">
-                <a href="../informacoes/reclamacoes.html">Reclame Já</a>
-                <a href="../informacoes/noticias.html">Ver Notícias</a>
-                <a href="../informacoes/reclamacoes.html">Visualizar Reclamações</a>
+                <a href="reclamacao/reclamacoes.html">Reclame Já</a>
+                <a href="informacoes/noticias.html">Ver Notícias</a>
+                <a href="reclamacao/reclamacoes.html">Visualizar Reclamações</a>
             </div>
         </div>
         <div class="footer-informacoes">
@@ -79,9 +74,9 @@
                 <h3>Informações</h3>
             </div>
             <div class="links-footer">
-                <a href="../index.html">Com quem falar?</a>
-                <a href="../sobrenos/sobrenos.html">Sobre Nós</a>
-                <a href="../informacoes/doencas.html">Doenças Relacionadas</a>
+                <a href="responsaveis.html">Com quem falar?</a>
+                <a href="sobrenos/sobrenos.html">Sobre Nós</a>
+                <a href="informacoes/doencas.html">Doenças Relacionadas</a>
             </div>
         </div>
         <div class="footer-faleConosco">
@@ -110,6 +105,7 @@
     </footer>
 </body>
 </html>
+    <script src="index.js"></script>  
     <script src="script.js"></script>  
 </body>
 </html>
