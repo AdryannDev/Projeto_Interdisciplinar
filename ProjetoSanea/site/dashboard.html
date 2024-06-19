@@ -4,45 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dashboard.css">
     <link rel="shortcut icon" href="../ico/icon_saneaSP.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header id="header">
         <div id="logo-header">
-            <a href=""><img src="../../img/logos/logo_sanea.svg" alt="Ir para a página principal" id="logo_header"></a>
+            <a href="index.html"><img src="../../img/logos/logo_sanea.svg" alt="Ir para a página principal" id="logo_header"></a>
         </div>
         <nav id="navbar-header">
             <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
                 <span id="hamburguer"></span>
             </button>
             <ul id="navbar-links" role="menu">
-                <li><a href="" id="doencas_navbar_link" class="navbar-header-link"><img src="../../img/header/doencas_icone.svg" alt="ícone de doenças">Doenças</a></li>
-                <li><a href=""  id="reclamacoes_navbar_link" class="navbar-header-link"><img src="../../img/header/reclamacoes_icone.svg" alt="ícone de doenças">Reclamações</a></li>
-                <li><a href=""  id="noticias_navbar_link" class="navbar-header-link"><img src="../../img/header/noticias_icone.svg" alt="ícone de doenças">Notícias</a></li>
-                <li id="login-navbar"><a href=""><img src="../../img/header/usuario_login.svg" alt="Ir para a página de login" id="icon_login"><span>Login</span></a></li>
+                <li><a href="informacoes/doencas.html" id="doencas_navbar_link" class="navbar-header-link"><img src="../../img/header/doencas_icone.svg" alt="ícone de doenças">Doenças</a></li>
+                <li><a href="reclamacao/reclamacoes.html"  id="reclamacoes_navbar_link" class="navbar-header-link"><img src="../../img/header/reclamacoes_icone.svg" alt="ícone de doenças">Reclamações</a></li>
+                <li><a href="informacoes/noticias.html"  id="noticias_navbar_link" class="navbar-header-link"><img src="../../img/header/noticias_icone.svg" alt="ícone de doenças">Notícias</a></li>
+                <li id="login-navbar"><a href="login/login.html"><img src="../../img/header/usuario_login.svg" alt="Ir para a página de login" id="icon_login"><span>Login</span></a></li>
             </ul>
         </nav>
     </header>
-        
     <main>
-        <div>
-            <div>
-                <h2>Criar nova reclamação</h2>
-                <img src="../img/paginas/menu/reclamacao.svg" alt="">
-
-            </div>
-            <div>
-                <h2>Ver notícias</h2>
-                <img src="../img/paginas/menu/noticias.svg" alt="">
-            </div>
-            <div>
-                <h2>Com quem falar</h2>
-                <img src="../img/paginas/menu/headset.svg" alt="">
-            </div>
-            <div>
-                <h2>Doenças</h2>
-                <img src="../img/paginas/menu/doencas.svg" alt="">
+        <div class="container-dashboard">
+            <div class="opcoes-dashboard">
+                <div class="grupo-opcao-dashboard">
+                    <div class="opcao-dashboard" id="opcao-dash-add-reclamacao">
+                        <img class="icone-menu-admin" src="../img/paginas/menu/reclamacao.svg" alt="">
+                        <span class="txt-menu-admin">Criar nova reclamação</span>
+                    </div>
+                    <div class="opcao-dashboard" id="opcao-dash-noticias">
+                        <img class="icone-menu-admin" src="../img/paginas/menu/noticias.svg" alt="">
+                        <span class="txt-menu-admin">Ver notícias</span>
+                    </div>
+                </div>
+                <div class="grupo-opcao-dashboard" id="opcao-dash-responsaveis">
+                    <div class="opcao-dashboard">
+                        <img class="icone-menu-admin" src="../img/paginas/menu/headset.svg" alt="">
+                        <span class="txt-menu-admin">Com quem falar</span>
+                    </div>
+                    <div class="opcao-dashboard" id="opcao-dash-doencas">
+                        <img class="icone-menu-admin" src="../img/paginas/menu/doencas.svg" alt="">
+                        <span class="txt-menu-admin">Doenças</span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -52,9 +57,9 @@
                 <h3>Reclamações</h3>
             </div>
             <div class="links-footer">
-                <a href="../informacoes/reclamacoes.html">Reclame Já</a>
-                <a href="../informacoes/noticias.html">Ver Notícias</a>
-                <a href="../informacoes/reclamacoes.html">Visualizar Reclamações</a>
+                <a href="reclamacao/adicionar.html">Reclame Já</a>
+                <a href="informacoes/noticias.html">Ver Notícias</a>
+                <a href="informacoes/reclamacoes.html">Visualizar Reclamações</a>
             </div>
         </div>
         <div class="footer-informacoes">
@@ -62,9 +67,9 @@
                 <h3>Informações</h3>
             </div>
             <div class="links-footer">
-                <a href="../index.html">Com quem falar?</a>
-                <a href="../sobrenos/sobrenos.html">Sobre Nós</a>
-                <a href="../informacoes/doencas.html">Doenças Relacionadas</a>
+                <a href="informacoes/responsaveis.html">Com quem falar?</a>
+                <a href="sobrenos/sobrenos.html">Sobre Nós</a>
+                <a href="informacoes/doencas.html">Doenças Relacionadas</a>
             </div>
         </div>
         <div class="footer-faleConosco">
@@ -94,5 +99,6 @@
 </body>
 </html>
     <script src="script.js"></script>  
+    <script src="dashboard.js"></script>
 </body>
 </html>
