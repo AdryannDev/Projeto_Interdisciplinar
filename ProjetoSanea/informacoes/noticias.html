@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+    <link rel="stylesheet" href="noticias.css">
+    <link rel="shortcut icon" href="../ico//icon_saneaSP.ico" type="image/x-icon">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="logo-header">
+            <a href="../index.html"><img src="../img/logos/logo_sanea.svg" alt="Ir para a página principal" id="logo_header"></a>
+        </div>
+        <nav id="navbar-header">
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="navbar-links" role="menu">
+                <li><a href="doencas.html" id="doencas_navbar_link" class="navbar-header-link"><img src="../img/header/doencas_icone.svg" alt="ícone de doenças">Doenças</a></li>
+                <li><a href="../reclamacao/reclamacoes.html"  id="reclamacoes_navbar_link" class="navbar-header-link"><img src="../img/header/reclamacoes_icone.svg" alt="ícone de doenças">Reclamações</a></li>
+                <li><a href="noticias.html"  id="noticias_navbar_link" class="navbar-header-link"><img src="../img/header/noticias_icone.svg" alt="ícone de doenças">Notícias</a></li>
+                <li id="login-navbar"><a href="../login/login.html"><img src="../img/header/usuario_login.svg" alt="Ir para a página de login" id="icon_login"><span>Login</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner-noticias">
+            <div class="img-banner-noticias">
+                <img src="../img/paginas/noticias/noticia.svg" alt="Banner de Notícias">
+            </div>
+            <div class="texto-banner-noticias">
+                <span>
+                    Acompanhar notícias sobre água potável e saneamento é essencial para manter-se informado sobre a qualidade 
+                    e disponibilidade dos recursos hídricos, além de medidas preventivas contra doenças. 
+                    Conhecer atualizações e políticas públicas nessa área ajuda a promover a saúde pública e a sustentabilidade 
+                    ambiental.
+                </span>
+            </div>
+        </div>
+        <div class="pesquisa-noticias">
+            <h2>Notícias sobre o saneamento básico:</h2>
+            <div class="filtro-pesquisa-noticias">
+                <div class="opcoes-filtro-noticias">
+                    <div class="nome-pesquisa-noticias">
+                        <div class="input-pesquisa-noticias">
+                            <label for="input-filtro-noticias">Pesquise uma notícia</label>
+                            <input type="text" name="input-filtro-noticias" id="input-filtro-noticias" placeholder="Nome da notícia" maxlength="20">
+                        </div>
+                    </div>
+                    <div class="tags-pesquisa-noticias">
+                        <label for="select-noticias">Selecione uma categoria de notícias</label>
+                        <select name="select-noticias" id="select-noticias">
+                            <option value="todos">Todas</option>
+                            <option value="anuncio">Anuncio</option>
+                            <option value="esgoto">Esgoto</option>
+                            <option value="falta">Falta de Água</option>
+                            <option value="historia">História</option>
+                            <option value="poluicao">Poluição</option>
+                            <option value="vazamento">Vazamento</option>
+                            <!-- Demais tags -->
+                        </select>
+                    </div>
+                </div>
+                <div class="info-filtro-noticias">
+                    <div class="cancelar-pesquisa-noticias" id="cancelar-pesquisa-noticias">
+                        <img src="../img/paginas/noticias/cancelar.svg" alt="Remover filtro">
+                    </div>
+                    <div class="resultado-pesquisa-noticias">
+                        <span>Nenhum resultado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards-noticias" id="cards-noticias">
+            <div class="card-noticia" id="card-senado">
+                <div class="tags-noticias">
+                    <span class="anuncio-noticia">#Anuncio</span>
+                </div>
+                <div class="desc-card-noticia">
+                    <img src="../img/paginas/noticias/senado.webp" alt="Imagem da Notícia 1">
+                    <h3>Senado aprova projeto que cria tarifa social de água e esgoto para pessoas de baixa renda</h3>
+                </div>
+                
+                <div class="link-card-noticia">
+                    <span>Clique para ver mais sobre</span>
+                </div>
+            </div>
+            <div class="card-noticia" id="card-senado(1)">
+                <div class="tags-noticias">
+                    <span class="anuncio-noticia">#Anuncio</span>
+                </div>
+                <div class="desc-card-noticia">
+                    <img src="../img/paginas/noticias/aguaeesgoto.webp" alt="Imagem da Notícia 2">
+                    <h3>Senado pode votar tarifa social de água e esgoto para baixa renda nesta quarta (8)</h3>
+                </div>
+                <div class="link-card-noticia">
+                    <span>Clique para ver mais sobre</span>
+                </div>
+            </div>
+            <div class="card-noticia" id="card-rj">
+                <div class="tags-noticias">
+                    <span class="historia-noticia">#Historia</span>
+                    <span class="poluicao-noticia">#Poluicao</span>
+                </div>
+                <div class="desc-card-noticia">
+                    <img src="../img/paginas/noticias/forca-tarefa.webp" alt="Imagem da Notícia 3">
+                    <h3>RJ: força-tarefa tenta descobrir de onde veio produto que poluiu água</h3>
+                </div>
+                <div class="link-card-noticia">
+                    <span>Clique para ver mais sobre</span>
+                </div>
+            </div>
+            <div class="card-noticia" id="card-captacao">
+                <div class="tags-noticias">
+                    <span class="historia-noticia">#Historia</span>
+                </div>
+                <div class="desc-card-noticia">
+                    <img src="../img/paginas/noticias/retomada.webp" alt="Imagem da Notícia 4">
+                    <h3>Captação é retomada após poluente contaminar água que abastece cidades no Rio</h3>
+                </div>   
+                <div class="link-card-noticia">
+                    <span>Clique para ver mais sobre</span>
+                </div>
+            </div>
+            <div class="card-noticia" id="card-dia">
+                <div class="tags-noticias">
+                    <span class="historia-noticia">#História</span>
+                    <span class="falta-noticia">#Falta de Água</span>
+                </div>
+                <div class="desc-card-noticia">
+                    <img src="../img/paginas/noticias/cerrado.webp" alt="Imagem da Notícia 5">
+                    <h3>Dia mundial da água: Cerrado, conhecido como berço das águas, já teve 53% de área desmatada</h3>
+                </div>
+                <div class="link-card-noticia">
+                    <span>Clique para ver mais sobre</span>
+                </div>
+            </div>
+            <div class="card-noticia" id="card-vazamento">
+                <div class="tags-noticias">
+                    <span class="historia-noticia">#Historia</span>
+                    <span class="poluicao-noticia">#Poluicao</span>
+                    <span class="vazamento-noticia">#Vazamento</span>
+                </div>
+                <div class="desc-card-noticia">
+                    <img src="../img/paginas/noticias/retomada.webp" alt="Imagem da Notícia 6">
+                    <h3>Vazamento que contaminou água da Cedae é achado próximo a oleoduto; imagem aérea mostra mancha em rio</h3>
+                </div>   
+                <div class="link-card-noticia">
+                    <span>Clique para ver mais sobre</span>
+                </div>
+            </div>
+            <!-- Demais Notícias -->
+            <div class="card-nenhuma-noticia">
+                <img src="../img/paginas/noticias/nao-encontrado.png" alt="Notícia não encontrada">
+                <span>Nenhuma notícia encontrada com esse filtro!</span>
+                <div class="link-card-noticia">
+                    <span>Clique para ver mais sobre</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-reclamacoes">
+            <div class="titulo-footer">
+                <h3>Reclamações</h3>
+            </div>
+            <div class="links-footer">
+                <a href="../reclamacao/adicionar.html">Reclame Já</a>
+                <a href="../informacoes/noticias.html">Ver Notícias</a>
+                <a href="../reclamacao/reclamacoes.html">Visualizar Reclamações</a>
+            </div>
+        </div>
+        <div class="footer-informacoes">
+            <div class="titulo-footer">
+                <h3>Informações</h3>
+            </div>
+            <div class="links-footer">
+                <a href="../informacoes/responsaveis.html">Com quem falar?</a>
+                <a href="../sobrenos/sobrenos.html">Sobre Nós</a>
+                <a href="../informacoes/doencas.html">Doenças Relacionadas</a>
+            </div>
+        </div>
+        <div class="footer-faleConosco">
+            <div class="titulo-footer">
+                <h3>Fale Conosco</h3>
+            </div>
+            <div class="links-footer">
+                <div class="box-footer">
+                    <img src="../img/footer/telefone_footer.svg" alt="Telefone do SaneaSP">
+                    <a href="tell:(15)99138-6263">(15) 99138-6263</a>   
+                </div>
+                <div class="box-footer">
+                    <img src="../img/footer/instagram.svg" alt="Instagram do SaneaSP">
+                    <a target="_blank" href="#">@saneaSP</a>   
+                </div>
+                <div class="box-footer">
+                    <img src="../img/footer/linkedin.svg" alt="Linkedin do SaneaSP">
+                    <a target="_blank" href="#">SaneaSP</a>   
+                </div>
+                <div class="box-footer">
+                    <img src="../img/footer/email_footer.svg" alt="icone de telefone">
+                    <a href="mailto:saneaSP@gmail.com">saneaSP@gmail.com</a>   
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="noticias.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import url(style/style.css);
+@import url(style/header.css);
+@import url(style/footer.css);
+
+.opcoes-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d9d9d9;
+}
+.opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 60px;
+    height: 140px;
+    padding: 25px 0px 25px 40px;
+    cursor: pointer;
+    transition: 0.4s background-color ease;
+    box-sizing: border-box;
+    font-size: 0.8rem; 
+}
+
+.sep-menu-usuario{
+    border-bottom: 1px solid rgb(51, 51, 51);
+}
+
+.icone-menu{
+    width: 60px;
+    height: 60px;
+}
+
+.opcoes-doencas:hover, .opcoes-noticias:hover, .opcoes-responsaveis:hover{
+    background-color: rgba(48, 71, 119, 0.329);
+}
+
+@media (max-width: 400px){
+    h2{
+        font-size: 1rem;
+    }
+    .opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis {
+        font-size: 0.73rem;
+        gap: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px){
+    .opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis {
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+}
