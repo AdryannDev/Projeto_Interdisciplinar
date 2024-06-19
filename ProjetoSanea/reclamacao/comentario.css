@@ -1,0 +1,151 @@
+@import url(../style/style.css);
+@import url(../style/header.css);
+@import url(../style/footer.css);
+
+section{
+    margin: 20px 40px;
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px black;
+    height: auto;
+}
+section .cabecario-comentario, section .corpo-cometario{
+    padding: 10px 40px;
+}
+section .cabecario-comentario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+section .cabecario-comentario .titulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: var(--comentario-titulo);
+}
+
+section .cabecario-comentario .titulo h2{
+    font-weight: 550;
+    padding-right: 70px;
+}
+
+section .cabecario-comentario p{
+    text-align: justify;
+    font-weight: 400;
+}
+section hr{
+    border: 1.5px solid var(--cor-primaria);
+    margin: 30px 0px;
+}
+
+section .corpo-cometario{
+    display: flex;
+    flex-direction: column;
+    gap: 40px ;
+    
+}
+
+section .corpo-cometario .resposta, section .corpo-cometario .cometario{
+    gap:5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 10px black;
+    border-radius: 10px;
+    padding: 20px 20px;
+    background-color: var(--cor-bloco-comentario);
+}
+section .corpo-cometario .resposta{
+    margin-right: 40%;
+}
+.resposta p, .cometario p{
+    text-align: justify;
+}
+section .corpo-cometario .cometario{
+    margin-left: 40%;
+}
+section .corpo-cometario .cometario h3{
+    text-align: end;
+}
+section .novo-cometario{
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+   justify-content: center;
+   align-items: flex-end;
+   transition: .4s;
+}
+section .novo-cometario textarea{
+    border-radius: 20px;
+    background-color: var(--cor-terciaria);
+    width: 40%;
+    padding: 0 15px;
+    resize: none;
+    align-content: center;
+    text-align: left;
+    border-style: hidden;
+    font-size: 16px;
+    font-weight: 300;
+}
+section .novo-cometario textarea:focus{
+    outline: none; 
+    overflow: hidden;
+}
+section .novo-cometario button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    border-style: none;
+    transition: .5s;
+}
+section .novo-cometario button:hover{
+    box-shadow: 1px 2px 8px rgb(0, 0, 0);
+}
+section .novo-cometario button img{
+    transition: .7s;
+}
+section .novo-cometario button img:hover{
+    transform: scale(1.3);
+}
+@media (max-width: 670px) {
+    section .cabecario-comentario .titulo{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    section .cabecario-comentario .titulo h2{
+        padding: 0;
+    }
+}
+@media (max-width: 800px) {
+    section{
+        margin: 20px 15px;
+    }
+    section .novo-cometario{
+        gap: 25px;
+    }
+    section .corpo-cometario .cometario{
+        margin-left: 8%;
+    }
+    section .corpo-cometario .resposta{
+        margin-right: 8%;
+    }
+    section .novo-cometario textarea{
+        width: 80%;
+    }
+    section .novo-cometario button{
+        width: 7%;
+        border: none;
+        background-color:var(--cor-secundaria);
+        padding: 0;
+    }
+    section .novo-cometario button img{
+        width: 80%;
+    }
+}
