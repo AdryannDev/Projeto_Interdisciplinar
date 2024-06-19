@@ -1,5 +1,6 @@
-let cidades = document.querySelector("#cidade_select").value;
+let cidades = document.querySelector("#cidade_select");
 
 function localizacao(){
-    document.getElementById("titulo_cidade").innerText = cidades.innerHTML;
+    var titulo_cidade = document.getElementById("titulo_cidade");
+    titulo_cidade.innerText = ;
 }
