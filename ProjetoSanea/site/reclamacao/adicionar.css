@@ -12,8 +12,8 @@ main{
 }
 
 .formulario-cadastro{
-    width: 935px;
-    height: 600px; /* No figma é 514px*/
+    width: 85vw;
+    height: auto; /* No figma é 514px*/
     background-color: var(--cor-form-login);
     margin: 49px 0px;
     display: flex;
@@ -21,6 +21,7 @@ main{
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 .formulario-cadastro h1{
@@ -30,6 +31,7 @@ main{
 
 .cadastro-titulo{
     font-weight: var(--texto-semibold);
+    text-align: center;
 }
 
 .cadastro-inputs{
@@ -38,7 +40,7 @@ main{
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    gap: 16\px;
+    gap: 16px;
 }
 
 .cadastro-input{
@@ -50,13 +52,12 @@ main{
 
 .cadastro-inputs label{
     font-size: var(--login-label);
-  
 }
 
 .cadastro-inputs input{
     background-color: white;
     border-radius: 10px;
-    width: 800px;
+    width: 75vw;
     height: 45px;
     border: 0px;
     color: #575757;
@@ -76,7 +77,7 @@ main{
 #reclamacao{
     background-color: white;
     border-radius: 10px;
-    width: 800px;
+    width: 75vw;
     height: 100px;
     border: 0px;
     color: #575757;
@@ -109,7 +110,7 @@ main{
     padding-bottom: 10px;
 }
 #enviar-botao{
-    width: 266px;
+    width: 30%;
     height: 46px;
     margin-top: 32px;
     font-size: var(--login-botao);
@@ -131,4 +132,10 @@ main{
 #enviar-botao:hover{
     opacity: 0.4;
     cursor: pointer;
+}
+
+#imagem-preview{
+    width: 500px;
+    height: 500px;
+    display: none;
 }

@@ -16,49 +16,49 @@
     --familia-secundaria: georgia, sans-serif;
 
     /* Tamanho do texto */
-    --fonte-primaria: 20px;
-    --fonte-secundaria: 18px;
-    --fonte-terciaria: 30px;
+    --fonte-primaria: 1rem;
+    --fonte-secundaria: 1.063rem;
+    --fonte-terciaria: 1.875rem;
     --texto-bold: bold;
     --texto-semibold: 600;
 
     /* Header  */
     --header-altura: 100px;
-    --header-texto: 18px;
+    --header-texto: 1.125rem;
     --navbar-espacamento-letras: "1.5px";
 
     /* Footer */
     --footer-altura: 242px;
-    --footer-links: 20px;
-    --footer-titulos: 32px;
+    --footer-links: 1.25rem;
+    --footer-titulos: 2rem;
     --footer-icones: 32px; /* width e height dos ícones*/
 
     /* Login e Cadastro */
-    --login-titulo: 30px; 
-    --login-label: 14px;
-    --login-botao: 18px;
-    --login-texto: 14px; /* Textos menores (p ou span) */
+    --login-titulo: 1.675rem; 
+    --login-label: 0.875rem;
+    --login-botao: 1.125rem;
+    --login-texto: 0.875rem; /* Textos menores (p ou span) */
 
     /* Menu */
     --menu-icones: 92px; /* width e height dos ícones */
 
     /* Informações */
-    --info-titulo: 30px;
+    --info-titulo: 1.875rem;
     --info-icones: 101px; /* width e height dos ícones */
 
     /* Doenças e Notícias */
-    --doencas-texto: 16px;
-    --doencas-titulo: 30px;
+    --doencas-texto: 1rem;
+    --doencas-titulo: 1.875rem;
 
     /* Detalhes Doença e Noticias*/
-    --doencas-view-titulo: 30px;
+    --doencas-view-titulo: 1.875rem;
 
     /* SobreNos */
-    --sobrenos-titulo: 32px;
+    --sobrenos-titulo: 1.75rem;
 
     /* Comentários da Reclamação */
-    --comentario-titulo: 20px;
-    --comentario-reclamacao: 20px;
+    --comentario-titulo: 1.5rem;
+    --comentario-reclamacao: 1.25rem;
 }
 
 *{

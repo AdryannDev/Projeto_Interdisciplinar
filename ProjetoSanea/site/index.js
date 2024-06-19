@@ -1,6 +1,9 @@
-ScrollReveal().reveal('.opcoes-doencas',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.2, distance: "100px"});
-ScrollReveal().reveal('.opcoes-noticias',{origin: "left", duration: 2500, easing: 'ease', opacity: 0.2, distance: "100px"});
-ScrollReveal().reveal('.opcoes-responsaveis',{origin: "left", duration: 3000, easing: 'ease', opacity: 0.2, distance: "100px"});
+ScrollReveal().reveal('.opcoes-doencas-txt',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.2, distance: "100px"});
+ScrollReveal().reveal('.opcoes-noticias-txt',{origin: "left", duration: 2500, easing: 'ease', opacity: 0.2, distance: "100px"});
+ScrollReveal().reveal('.opcoes-responsaveis-txt',{origin: "left", duration: 3000, easing: 'ease', opacity: 0.2, distance: "100px"});
+ScrollReveal().reveal('.opcoes-doencas-img',{origin: "left", duration: 2000, easing: 'ease', opacity: 0.1, distance: "70px"});
+ScrollReveal().reveal('.opcoes-noticias-img',{origin: "left", duration: 2500, easing: 'ease', opacity: 0.1, distance: "70px"});
+ScrollReveal().reveal('.opcoes-responsaveis-img',{origin: "left", duration: 3000, easing: 'ease', opacity: 0.1, distance: "70px"});
 
 //Links do Menu
 const opcoesMenu = document.querySelectorAll('.opcao-menu')

@@ -1,6 +1,7 @@
 const input = document.getElementById('imagem-input');
 const button = document.getElementById('upload-button');
 const preview = document.getElementById('imagem-preview');
+const botaoEnviar = document.getElementById("enviar-botao");
 
 // Quando o botão é clicado, o input de arquivo é acionado
 button.addEventListener('click', function() {
@@ -18,3 +19,8 @@ input.addEventListener('change', function(event) {
         reader.readAsDataURL(input.files[0]);
     }
 });
+
+botaoEnviar.addEventListener("click", function(){
+    window.location.href = "../index.html"
+});
+

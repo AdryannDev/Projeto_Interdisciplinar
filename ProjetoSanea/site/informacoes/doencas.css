@@ -15,6 +15,10 @@
     gap: 20px;
 }
 
+h2{
+    text-align: center;
+}
+
 .texto-banner-doencas span{
     text-wrap: wrap;
     text-align: center;
@@ -44,7 +48,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     background-color: var(--cor-terciaria);
     padding: 20px;
     border-radius: 10px;
@@ -94,7 +98,12 @@
     border: 4px solid #aaaaaa;
     width: 300px;
     transition: 0.4s all ease;
-    font-size: 18px;
+    font-size: 0.938rem;
+    box-sizing: border-box;
+}
+
+.input-pesquisa-doencas label, .tags-pesquisa-doencas label{
+    font-size: 1rem;
 }
 
 .cancelar-pesquisa-doencas{
@@ -103,7 +112,9 @@
 
 .cancelar-pesquisa-doencas img{
     transition: 0.4s all;
-    margin-top: 30px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .cancelar-pesquisa-doencas img:hover{
@@ -112,8 +123,10 @@
 }
 
 .resultado-pesquisa-doencas{
-    margin-top: 20px;
+    margin-top: 10px;
     display: none;
+    font-size: 0.875rem;
+    text-align: center;
 }
 
 .tags-pesquisa-doencas{
@@ -129,7 +142,7 @@
     border: 4px solid #aaaaaa;
     width: 300px;
     transition: 0.4s all ease;
-    font-size: 18px;
+    font-size: 0.938rem;
 }
 
 .cards-doencas{
@@ -155,6 +168,11 @@
     cursor: pointer;
     font-weight: 500;
     transition: 0.4s all ease;
+    font-size: 0.875rem;
+}
+
+.card-nenhuma-doenca{
+    gap: 20px;
 }
 
 .corpo-card-doenca{
@@ -218,7 +236,8 @@
 @media (max-width:900px){
     .banner-doencas{
         margin: 0px;
-        font-size: 12px;
+        font-size: 0.75rem;
+        text-align: center;
     }
 
     .img-banner-doencas img{
@@ -233,11 +252,11 @@
 
 @media (max-width: 515px){
     .input-pesquisa-doencas input{
-        width: 200px;
+        width: 100%;
     }
 
     #select-doencas{
-        width: 200px;
+        width: 100%;
     }
 
     .cards-doencas{
@@ -249,10 +268,11 @@
         gap: 40px;
     }
     
-    .card-doenca{
+    .card-doenca, .card-nenhuma-doenca{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        align-items: center;
     }
         
     .card-doenca, .card-nenhuma-doenca{
@@ -268,7 +288,7 @@
         gap: 20px;
     }
 
-    .card-doenca img, .card-nenhuma-doenca img{
+    .card-doenca img{
         width: 200px;
         height: 200px;
         border-radius: 10px;
