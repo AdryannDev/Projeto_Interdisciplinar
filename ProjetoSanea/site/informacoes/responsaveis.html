@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,6 @@
     <title>Responsáveis</title>
 </head>
 <body>
-    <!-- Inicio header -->
     <header id="header">
         <div id="logo-header">
             <a href="../index.html"><img src="../../img/logos/logo_sanea.svg" alt="Ir para a página principal" id="logo_header"></a>
@@ -26,70 +25,66 @@
             </ul>
         </nav>
     </header>
-    <!-- Fim header -->
-    <!-- Inicio responsáveis -->
-    <h1 id="titulo"><b>Responsáveis</b></h1>
-    <select name="cidades" id="cidade_select">
-        <optgroup><label for="regiao1">Sub-região 1</label>
-        <option value="alambari">Alambari</option>
-        <option value="boituva">Boituva</option>
-        <option value="capelaDoAlto">Capela do Alto</option>
-        <option value="cerquilho">Cerquilho</option>
-        <option value="cesarioLange">Cesário Lange</option>
-        <option value="jumirim">Jumirim</option>
-        <option value="sarapui">Sarapuí</option>
-        <option value="tatui">Tatuí</option>
-        <option value="tiete">Tietê</option>
-        <option value="itapetininga">Itapetininga</option>
-        </optgroup>
-        <optgroup><label for="regiao2">Sub-região 2</label>
-        <option value="aluminio">Alumínio</option>
-        <option value="aracariguama">Araçariguama</option>
-        <option value="ibiuna">Ibiúna</option>
-        <option value="itu">Itu</option>
-        <option value="mairinque">Mairinque</option>
-        <option value="portoFeliz">Porto Feliz</option>
-        <option value="salto">Salto</option>
-        <option value="saoRoque">São Roque</option>
-        </optgroup>
-        <optgroup><label for="regiao3">Sub-região 3</label>
-        <option value="aracoiabaDaSerra">Araçoiaba da Serra</option>
-        <option value="ipero">Iperó</option>
-        <option value="piedade">Piedade</option>
-        <option value="pilarDoSul">Pilar do Sul</option>
-        <option value="saltoDePirapora">Salto de Pirapora</option>
-        <option value="saoMiguelArcanjo">São Miguel Arcanjo</option>
-        <option value="sorocaba">Sorocaba</option>
-        <option value="tapirai">Tapiraí</option>
-        <option value="votorantim" selected>Votorantim</option>
-        </optgroup>
-    </select>
-    <button onclick="localizacao()">Buscar</button>
-    <section id="informacoes_cidade">
-        <h2 id="titulo_cidade">Votorantim</h2>
-        <div class="cidade_info">
-            <span class="responsaveis">Em Votorantim, os responsáveis pelo saneamento são os funcionários da empresa privada: águas de Votorantim</span>
-            <p class="responsaveis">Endereço: Rua Antonio Festa, 88 - Centro Votorantim, SP - CEP: 18110-105</p>
-            <div class="contato">
-                <a href="tell:(15) 3353-7300"><img src="../../img/footer/phone.svg" alt="Telefone">Telefone: (15) 3353-7300</a>
+    <main>
+        <!-- <h1><b>Responsáveis</b></h1>
+        <select name="cidades" id="cidade_select">
+            <optgroup><label for="regiao1">Sub-região 1</label>
+            <option value="alambari">Alambari</option>
+            <option value="boituva">Boituva</option>
+            <option value="capelaDoAlto">Capela do Alto</option>
+            <option value="cerquilho">Cerquilho</option>
+            <option value="cesarioLange">Cesário Lange</option>
+            <option value="jumirim">Jumirim</option>
+            <option value="sarapui">Sarapuí</option>
+            <option value="tatui">Tatuí</option>
+            <option value="tiete">Tietê</option>
+            <option value="itapetininga">Itapetininga</option>
+            </optgroup>
+            <optgroup><label for="regiao2">Sub-região 2</label>
+            <option value="aluminio">Alumínio</option>
+            <option value="aracariguama">Araçariguama</option>
+            <option value="ibiuna">Ibiúna</option>
+            <option value="itu">Itu</option>
+            <option value="mairinque">Mairinque</option>
+            <option value="portoFeliz">Porto Feliz</option>
+            <option value="salto">Salto</option>
+            <option value="saoRoque">São Roque</option>
+            </optgroup>
+            </optgroup><label for="regiao3">Sub-região 3</label>
+            <option value="aracoiabaDaSerra">Araçoiaba da Serra</option>
+            <option value="ipero">Iperó</option>
+            <option value="piedade">Piedade</option>
+            <option value="pilarDoSul">Pilar do Sul</option>
+            <option value="saltoDePirapora">Salto de Pirapora</option>
+            <option value="saoMiguelArcanjo">São Miguel Arcanjo</option>
+            <option value="sorocaba">Sorocaba</option>
+            <option value="tapirai">Tapiraí</option>
+            <option value="votorantim">Votorantim</option>
+            </optgroup>
+        </select>
+        <button onclick="localizacao()">Buscar</button> -->
+        <section class="responsaveis">
+            <h2 id="titulo_cidade">Votorantim</h2>
+            <div>
+                <span id="responsaveis">Em Votorantim, os responsáveis pelo saneamento são os funcionários da empresa privada: águas de Votorantim</span>
+                <p>Endereço: Rua Antonio Festa, 88 - Centro Votorantim, SP - CEP: 18110-105</p>
+                <div id="telefone" class="links-responsaveis">
+                    <a href="tell:(15) 3353-7300"><img src="../../img/footer/phone.svg" alt="Telefone" class="icone-responsaveis">Telefone: (15) 3353-7300</a>
+                </div>
+                <div id="email" class="links-responsaveis">
+                    <a href="mailto:presidente@votorantim.sp.leg.br"><img src="../../img/footer/email.svg" alt="email icone" class="icone-responsaveis"> Email: presidente@votorantim.sp.leg.br</a>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wbRwtKVtY6k6U12zqjyjmSVUqbfU7h0ZfQ&s" alt="Imagem empresa" id="imagem-responsaveis">
             </div>
-            <div class="contato">
-            <a href="mailto:presidente@votorantim.sp.leg.br"><img src="../../img/footer/email.svg" alt="email icone"> Email: presidente@votorantim.sp.leg.br</a>
-            </div>
-            <div id="imagem">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wbRwtKVtY6k6U12zqjyjmSVUqbfU7h0ZfQ&s" alt="Imagem empresa">
-            </div>
-        </div>
-    </section>
-    <!-- Fim Responsáveis -->
-    <!-- Inicio footer -->
+        </section>
+    </main>
     <footer>
         <div class="footer-reclamacoes">
             <div class="titulo-footer">
                 <h3>Reclamações</h3>
             </div>
             <div class="links-footer">
-                <a href="../reclamacao/reclamacoes.html">Reclame Já</a>
+                <a href="../reclamacao/adicionar.html">Reclame Já</a>
                 <a href="noticias.html">Ver Notícias</a>
                 <a href="../reclamacao/reclamacoes.html">Visualizar Reclamações</a>
             </div>
@@ -99,7 +94,7 @@
                 <h3>Informações</h3>
             </div>
             <div class="links-footer">
-                <a href="">Com quem falar?</a>
+                <a href="responsaveis.html">Com quem falar?</a>
                 <a href="../sobrenos/sobrenos.html">Sobre Nós</a>
                 <a href="doencas.html">Doenças Relacionadas</a>
             </div>
@@ -129,6 +124,7 @@
         </div>
     </footer>
     <!-- Fim footer -->
+     <script src="../script.js"></script>
     <script src="responsaveis.js"></script>
     <script src="../../script.js"></script>
 </body>

@@ -12,7 +12,7 @@ section .txt h2{
     font-size: var(--sobrenos-titulo);
 }
 section .txt p, span{   
-    font-size: var(--fonte-secundaria);
+    font-size: var(--fonte-primaria);
 }
 .empresa{
     align-content: center;

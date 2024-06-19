@@ -15,6 +15,10 @@
     gap: 20px;
 }
 
+h2{
+    text-align: center;
+}
+
 .texto-banner-reclamacoes span{
     text-wrap: wrap;
     text-align: justify;
@@ -29,7 +33,7 @@
     width: 580px;
 }
 
-.pesquisa-reclamacoes{
+.pesquisa-reclamacoes, .adicionar-reclamacao{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,17 +41,21 @@
     gap: 20px;
 }
 
+.adicionar-reclamacao{
+    margin-top: 20px;
+}
+
 .pesquisa-reclamacoes h2{
     word-break: break-all;
 }
 
-.filtro-pesquisa-reclamacoes{
+.filtro-pesquisa-reclamacoes, .container-adicionar-reclamacao{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     background-color: var(--cor-terciaria);
     padding: 20px;
     border-radius: 10px;
@@ -98,7 +106,12 @@
     border: 4px solid #aaaaaa;
     width: 300px;
     transition: 0.4s all ease;
-    font-size: 18px;
+    font-size: 0.938rem;
+    box-sizing: border-box;
+}
+
+.input-pesquisa-reclamacoes label, .tags-pesquisa-reclamacoes label{
+    font-size: 1rem;
 }
 
 .cancelar-pesquisa-reclamacoes{
@@ -107,7 +120,9 @@
 
 .cancelar-pesquisa-reclamacoes img{
     transition: 0.4s all;
-    margin-top: 30px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .cancelar-pesquisa-reclamacoes img:hover{
@@ -116,13 +131,10 @@
 }
 
 .resultado-pesquisa-reclamacoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     display: none;
-    font-size: 18px;
-    width: 400px;
+    font-size: 0.875rem;
+    text-align: center;
 }
 
 .resultado-pesquisa-reclamacoes span{
@@ -147,7 +159,7 @@
     border: 4px solid #aaaaaa;
     width: 300px;
     transition: 0.4s all ease;
-    font-size: 18px;
+    font-size: 0.938rem;
 }
 
 .cards-reclamacoes{
@@ -172,6 +184,7 @@
     width: 70%;
     cursor: pointer;
     font-weight: 500;
+    font-size: 0.875rem;
 }
 
 .tags-reclamacoes{
@@ -236,10 +249,38 @@
     border-radius: 10px;
 }
 
+.card-nenhuma-doenca{
+    gap: 20px;
+}
+
+
+#add-reclamacao-botao{
+    width: 50%;
+    height: 46px;
+    margin-top: 32px;
+    font-size: var(--login-botao);
+    background-color: var(--cor-quaternaria);
+    color: #fff;
+    border: 2px solid var(--cor-quaternaria);
+    border-radius: 5px;
+    filter: drop-shadow(13px 1px 13px #575757);
+    letter-spacing: 3px;
+    transition: 0.6s all ease;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#add-reclamacao-botao:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
 @media (max-width:900px){
     .banner-reclamacoes{
         margin: 0px;
-        font-size: 12px;
+        font-size: 0.75rem;
+        text-align: center;
     }
 
     .img-banner-reclamacoes img{
@@ -254,11 +295,11 @@
 
 @media (max-width: 515px){
     .input-pesquisa-reclamacoes input{
-        width: 200px;
+        width: 100%;
     }
 
     #select-reclamacoes{
-        width: 200px;
+        width: 100%;
     }
 
     .cards-reclamacoes{
@@ -270,7 +311,7 @@
         gap: 40px;
     }
     
-    .card-reclamacao{
+    .card-reclamacao, .card-nenhuma-reclamacao{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -294,28 +335,10 @@
         height: 200px;
         border-radius: 10px;
     }
-}
-#login-botao{
-    width: 266px;
-    height: 46px;
-    margin-top: 32px;
-    font-size: var(--login-botao);
-    background-color: var(--cor-quaternaria);
-    color: #fff;
-    border: 2px solid var(--cor-quaternaria);
-    border-radius: 5px;
-    filter: drop-shadow(13px 1px 13px #575757);
-    letter-spacing: 3px;
-    transition: 0.6s all ease;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    
+    #add-reclamacao-botao{
+        width: 100%;
+        font-size: 0.625rem;
+    }
 }
 
-#login-botao:hover{
-    opacity: 0.4;
-    cursor: pointer;
-}

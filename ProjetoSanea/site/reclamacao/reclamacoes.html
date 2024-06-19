@@ -41,13 +41,13 @@
             </div>
         </div>
         <div class="pesquisa-reclamacoes">
-            <h2>Veja as principais Reclamações: </h2>
+            <h2>Reclamações criadas por usuários: </h2>
             <div class="filtro-pesquisa-reclamacoes">
                 <div class="opcoes-filtro-reclamacoes">
                     <div class="nome-pesquisa-reclamacoes">
                         <div class="input-pesquisa-reclamacoes">
                             <label for="input-filtro-reclamacoes">Pesquise uma reclamação</label>
-                            <input type="text" name="input-filtro-reclamacoes" id="input-filtro-reclamacoes" placeholder="Nome da reclamação">
+                            <input type="text" name="input-filtro-reclamacoes" id="input-filtro-reclamacoes" placeholder="Nome da reclamação" maxlength="20">
                         </div>
                     </div>
                     <div class="tags-pesquisa-reclamacoes">
@@ -72,16 +72,10 @@
                 </div>
             </div>
         </div>
-        <div class="pesquisa-reclamacoes">
-            <h2>Adicone uma nova reclamação: </h2>
-            <div class="filtro-pesquisa-reclamacoes">
-                <div class="opcoes-filtro-reclamacoes">
-                    <div class="nome-pesquisa-reclamacoes">
-                        <div class="input-pesquisa-reclamacoes">
-                            <a href="../reclamacao/adicionar.html" id="login-botao"> ADICIONAR</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="adicionar-reclamacao">
+            <h2>Adicione sua reclamação: </h2>
+            <div class="container-adicionar-reclamacao">
+                <a href="../reclamacao/adicionar.html" id="add-reclamacao-botao"> ADICIONAR </a>  
             </div>
         </div>
         <div class="cards-reclamacoes" id="cards-reclamacoes">
@@ -150,7 +144,7 @@
             <!-- Demais Notícias -->
             <div class="card-nenhuma-reclamacao">
                 <img src="../../img/paginas/reclamacoes/nao-encontrado.png" alt="Imagem da reclamaçao (6)">
-                <h3>Nenhuma notícia encontrada com esse filtro!</h3>
+                <span>Nenhuma notícia encontrada com esse filtro!</span>
                 <div class="link-card-reclamacao">
                     <span>Clique para ver mais sobre</span>
                 </div>
@@ -163,7 +157,7 @@
                 <h3>Reclamações</h3>
             </div>
             <div class="links-footer">
-                <a href="../reclamacao/reclamacoes.html">Reclame Já</a>
+                <a href="../reclamacao/adicionar.html">Reclame Já</a>
                 <a href="../informacoes/reclamacoes.html">Ver Notícias</a>
                 <a href="../reclamacao/reclamacoes.html">Visualizar Reclamações</a>
             </div>
@@ -173,7 +167,7 @@
                 <h3>Informações</h3>
             </div>
             <div class="links-footer">
-                <a href="../index.html">Com quem falar?</a>
+                <a href="../informacoes/responsaveis.html">Com quem falar?</a>
                 <a href="../sobrenos/sobrenos.html">Sobre Nós</a>
                 <a href="../informacoes/reclamacoes.html">Doenças Relacionadas</a>
             </div>

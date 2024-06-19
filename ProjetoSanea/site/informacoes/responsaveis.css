@@ -1,47 +1,59 @@
-@import url(../index.css);
-#informacoes_cidade{
+@import url(../../style/style.css);
+@import url(../../header/header.css);
+@import url(../../footer/footer.css);
+
+.responsaveis{
     background-color: var(--cor-secundaria);
+    padding: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+#imagem-responsaveis{
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.links-responsaveis{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-#titulo_cidade{
-    font-family: var(--familia-primaria);
-    font-size: var(--fonte-primaria);
-}
-#cidade_info{
-    display: flex;
-    flex-direction: row;
-}
-.responsaveis{
-    display: flex;
-    width: 600px;
-    text-align: justify;
-    justify-content: center;
-    font-family: var(--familia-primaria);
-    font-size: var(--fonte-secundaria);
-}
-#imagem{
-    display: flex;
-    justify-content: center;
-}
-.contato a{
-    color:var(--cor-fonte-links);
+
+.responsaveis a{
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all ease;
 }
-#cidade_select{
-    margin-left: 350px;
-    background-color: var(--cor-quaternaria);
-    color:var(--cor-fundo);
-    border:2px solid var(--cor-primaria);
-    border-radius: 2px;
+
+.responsaveis a:hover{
+    opacity: 0.7;
 }
-button{
-    background-color: var(--cor-quaternaria);
-    color:var(--cor-fundo);
-    border:2px solid var(--cor-primaria);
-    border-radius: 2px;
+
+.icone-responsaveis{
+    width: 50px;
+    height: 50px;
 }
-#titulo{
-    margin-left: 350px;
+
+@media (max-width:500px){
+    #imagem-responsaveis{
+        width: 90vw;
+    }
+
+    .responsaveis{
+        font-size: 0.8rem;
+    }
+    .icone-responsaveis{
+        width: 20px;
+        height: 20px;
+    }
 }
