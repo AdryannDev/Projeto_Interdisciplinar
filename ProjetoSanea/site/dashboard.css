@@ -1,0 +1,68 @@
+@import url(../style/style.css);
+@import url(../header/header.css);
+@import url(../footer/footer.css);
+
+.container-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.opcoes-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-quaternaria);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+
+.grupo-opcao-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.opcao-dashboard{
+    background-color: var(--cor-secundaria);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.7s all ease;
+    cursor: pointer;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+
+.opcao-dashboard span{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.opcao-dashboard:hover{
+    transform: scale(1.05);
+}
+
+.icone-menu-admin{
+    width: 62px;
+    height: 62px;
+}
+
+@media (max-width:400px){
+    .opcoes-dashboard{
+        width: 90vw;
+        box-sizing: border-box;
+    }
+}
