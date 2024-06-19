@@ -44,29 +44,11 @@ a{
     color: var(--cor-fonte-links);
     text-decoration: none;
 }
-.botoes{
-    margin: 20px 5%;
+#botaoVoltar{
     width: 90%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-#botaoVoltar{
-    display: flex;
+    margin:10px;
     justify-content: flex-end;
-}
-#botaoComentario a, #botaoVoltar a{
-    color: blue;
-    transition: .7s;
-}
-#botaoComentario{
-    display: flex;
-    justify-content: flex-start;
-}
-#botaoComentario a:hover , #botaoVoltar a:hover{
-    transform: scale(1.2);
-    text-decoration: underline;
 }
 #texto h2{
     font-size: var(--fonte-terciaria);
@@ -102,30 +84,20 @@ a{
     .informacoes{
         flex-direction: column;
         flex-wrap: wrap;
-    }
-    #texto p{
-        width: 309px;
-    }
-    #imagem-reclamacao img{
-        justify-content: center;
-        width: 300px;
-        margin: 0px;
-        border: 0px;
-    }
-    #imagem-reclamacao{
-        justify-content: center;
-        margin: 0px;
-    }
-    .botoes{
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-@media (max-width:600px) {
-    .botoes{
-        flex-direction: column;
-        gap: 20px;
-    }
+        }
+        #texto p{
+            width: 309px;
+        }
+        #imagem-reclamacao img{
+            justify-content: center;
+            width: 300px;
+            margin: 0px;
+            border: 0px;
+        }
+        #imagem-reclamacao{
+            justify-content: center;
+            margin: 0px;
+        }
 }
 @media (min-width: 425.1px) and (max-width: 767.9px) {
     .informacoes{
