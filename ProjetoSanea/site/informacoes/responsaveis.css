@@ -1,0 +1,4 @@
+@import url(../index.css);
+section{
+    background-color: var(--cor-secundaria);
+}
