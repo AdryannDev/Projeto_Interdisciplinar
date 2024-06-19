@@ -28,7 +28,7 @@
     </header>
     <!-- Fim header -->
     <!-- Inicio responsáveis -->
-    <h1><b>Responsáveis</b></h1>
+    <h1 id="titulo"><b>Responsáveis</b></h1>
     <select name="cidades" id="cidade_select">
         <optgroup><label for="regiao1">Sub-região 1</label>
         <option value="alambari">Alambari</option>
@@ -52,7 +52,7 @@
         <option value="salto">Salto</option>
         <option value="saoRoque">São Roque</option>
         </optgroup>
-        </optgroup><label for="regiao3">Sub-região 3</label>
+        <optgroup><label for="regiao3">Sub-região 3</label>
         <option value="aracoiabaDaSerra">Araçoiaba da Serra</option>
         <option value="ipero">Iperó</option>
         <option value="piedade">Piedade</option>
@@ -61,22 +61,24 @@
         <option value="saoMiguelArcanjo">São Miguel Arcanjo</option>
         <option value="sorocaba">Sorocaba</option>
         <option value="tapirai">Tapiraí</option>
-        <option value="votorantim">Votorantim</option>
+        <option value="votorantim" selected>Votorantim</option>
         </optgroup>
     </select>
     <button onclick="localizacao()">Buscar</button>
-    <section>
+    <section id="informacoes_cidade">
         <h2 id="titulo_cidade">Votorantim</h2>
-        <div>
-            <span id="responsaveis">Em Votorantim, os responsáveis pelo saneamento são os funcionários da empresa privada: águas de Votorantim</span>
-            <p>Endereço: Rua Antonio Festa, 88 - Centro Votorantim, SP - CEP: 18110-105</p>
-            <div id="telefone">
+        <div class="cidade_info">
+            <span class="responsaveis">Em Votorantim, os responsáveis pelo saneamento são os funcionários da empresa privada: águas de Votorantim</span>
+            <p class="responsaveis">Endereço: Rua Antonio Festa, 88 - Centro Votorantim, SP - CEP: 18110-105</p>
+            <div class="contato">
                 <a href="tell:(15) 3353-7300"><img src="../../img/footer/phone.svg" alt="Telefone">Telefone: (15) 3353-7300</a>
             </div>
-            <div id="email">
+            <div class="contato">
             <a href="mailto:presidente@votorantim.sp.leg.br"><img src="../../img/footer/email.svg" alt="email icone"> Email: presidente@votorantim.sp.leg.br</a>
             </div>
+            <div id="imagem">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wbRwtKVtY6k6U12zqjyjmSVUqbfU7h0ZfQ&s" alt="Imagem empresa">
+            </div>
         </div>
     </section>
     <!-- Fim Responsáveis -->
@@ -128,5 +130,6 @@
     </footer>
     <!-- Fim footer -->
     <script src="responsaveis.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>
