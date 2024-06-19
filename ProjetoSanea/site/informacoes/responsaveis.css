@@ -1,4 +1,47 @@
 @import url(../index.css);
-section{
+#informacoes_cidade{
     background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titulo_cidade{
+    font-family: var(--familia-primaria);
+    font-size: var(--fonte-primaria);
+}
+#cidade_info{
+    display: flex;
+    flex-direction: row;
+}
+.responsaveis{
+    display: flex;
+    width: 600px;
+    text-align: justify;
+    justify-content: center;
+    font-family: var(--familia-primaria);
+    font-size: var(--fonte-secundaria);
+}
+#imagem{
+    display: flex;
+    justify-content: center;
+}
+.contato a{
+    color:var(--cor-fonte-links);
+    text-decoration: none;
+}
+#cidade_select{
+    margin-left: 350px;
+    background-color: var(--cor-quaternaria);
+    color:var(--cor-fundo);
+    border:2px solid var(--cor-primaria);
+    border-radius: 2px;
+}
+button{
+    background-color: var(--cor-quaternaria);
+    color:var(--cor-fundo);
+    border:2px solid var(--cor-primaria);
+    border-radius: 2px;
+}
+#titulo{
+    margin-left: 350px;
 }
