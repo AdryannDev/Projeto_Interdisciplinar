@@ -13,14 +13,14 @@ main{
 
 .formulario-cadastro{
     width: 935px;
-    height: 600px; 
-    margin: 20px 0px;
-    border-radius: 10px;
+    height: 600px; /* No figma é 514px*/
+    background-color: var(--cor-form-login);
+    margin: 49px 0px;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    background-color: var(--cor-form-login);
+    border-radius: 10px;
 }
 
 .formulario-cadastro h1{
@@ -41,11 +41,11 @@ main{
 
 .cadastro-inputs{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    gap: 16px;
+    gap: 16\px;
 }
 
 .cadastro-input{
@@ -53,8 +53,6 @@ main{
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    position: relative;
-    gap: 4px;
 }
 
 .cadastro-inputs label{
@@ -65,12 +63,12 @@ main{
     background-color: #575757;
     border-radius: 10px;
     width: 268px;
-    height: 40px;
+    height: 45px;
     border: 0px;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     padding: 2px 0px 2px 15px;
-    transition: 0.5s all ease;
+    transition: 0.5s all;
 }
 
 .cadastro-inputs input:hover{
@@ -142,7 +140,7 @@ main{
 }
 
 .direcionar-cadastro{
-    margin-top: 10px;
+    margin-top: 18px;
     margin-bottom: 15px;
 }
 
@@ -152,76 +150,4 @@ main{
 
 #link-cadastro{
     color: var(--cor-fonte-link);
-}
-
-#status-cadastro-endereco, #status-cadastro-email, #status-cadastro-nome, #status-cadastro-telefone, #status-cadastro-email, #status-cadastro-senha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    font-size: 12px;
-    color: #8b1818;
-    font-weight: 500;
-}
-
-#remover_endereco {
-    display: none;
-    position: absolute;
-    right: -40px;
-    top: 40px; /* Ajuste este valor conforme necessário */
-    cursor: pointer;
-    transition: 0.4s all ease;
-}
-
-#remover_endereco:hover{
-    filter: drop-shadow(0px -1px 10px #000000);
-    transform: scale(1.10);
-}
-
-#btn-procurar-cep{
-    font-size: 12px;
-    margin-left: 3px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration: underline;
-    transition: 0.3s all ease;
-}
-
-#btn-procurar-cep:hover{
-    opacity: 0.8;
-}
-
-@media (max-width: 948px){
-    .formulario-cadastro{
-        justify-content: center;
-        height: auto;
-        width: 90%;
-    }
-    .cadastro-titulo{
-        font-size: 14px;
-    }
-    .cadastro-form{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .cadastro-inputs input{
-        width: 50vw;
-    }
-    #cadastro-botao{
-        width: 40vw;
-    }
-    .cadastro-inputs{
-        margin-top: 10px;
-    }
-
-    .direcionar-cadastro{
-        text-align: center;
-    }
-
-    .entrar-redes{
-        width: 50vw;
-        max-width: 200px;
-    }
 }
