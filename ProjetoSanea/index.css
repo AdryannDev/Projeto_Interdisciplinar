@@ -8,7 +8,7 @@
     justify-content: center;
     background-color: #d9d9d9;
 }
-.opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis {
+.opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis, .opcoes-reclamacoes {
     display: flex;
     align-items: center;
     /* flex-wrap: wrap; */
@@ -30,7 +30,7 @@
     height: 60px;
 }
 
-.opcoes-doencas:hover, .opcoes-noticias:hover, .opcoes-responsaveis:hover{
+.opcoes-doencas:hover, .opcoes-noticias:hover, .opcoes-responsaveis:hover, .opcoes-reclamacoes:hover{
     background-color: rgba(48, 71, 119, 0.329);
 }
 
@@ -38,7 +38,7 @@
     h2{
         font-size: 1rem;
     }
-    .opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis {
+    .opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis,.opcoes-reclamacoes {
         font-size: 0.73rem;
         gap: 20px;
         height: auto;
@@ -46,7 +46,7 @@
 }
 
 @media (max-width: 320px){
-    .opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis {
+    .opcoes-doencas, .opcoes-noticias, .opcoes-responsaveis,.opcoes-reclamacoes {
         flex-wrap: wrap;
         padding-left: 10px;
     }

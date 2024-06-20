@@ -7,8 +7,8 @@ const opcoesMenu = document.querySelectorAll('.opcao-dashboard')
 
 opcoesMenu.forEach(opcao=>{
     opcao.addEventListener('click',function(){
-        if(opcao.id == "opcao-dash-add-reclamacao"){
-            window.location.href = "reclamacao/adicionar.html";
+        if(opcao.id == "opcao-dash-reclamacao"){
+            window.location.href = "reclamacao/reclamacoes.html";
         }
         else if(opcao.id == "opcao-dash-noticias"){
             window.location.href = "informacoes/noticias.html";

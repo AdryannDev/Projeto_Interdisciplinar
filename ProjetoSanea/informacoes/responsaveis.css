@@ -9,8 +9,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: justify;
+    font-size: 1rem;
     flex-wrap: wrap;
 }
 
@@ -40,8 +40,17 @@
 }
 
 .icone-responsaveis{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+#titulo_cidade {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.responsaveis p{
+    margin-bottom: 10px;
 }
 
 @media (max-width:500px){
