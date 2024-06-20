@@ -96,13 +96,13 @@ main{
 
 .check-manter-logado input[type="checkbox"] {
     appearance: none;
-    background: url(../img//login/checkbox.svg) no-repeat;
+    background: url(../img/login/checkbox.svg) no-repeat;
     width: 30px;
     height: 30px;
 }
 
 .check-manter-logado input[type="checkbox"]:checked {
-    background: url(../img//login/checked.svg) no-repeat;
+    background: url(../img/login/checked.svg) no-repeat;
 }
 
 #cadastro-botao{
